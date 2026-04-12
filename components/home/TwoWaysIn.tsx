@@ -1,84 +1,87 @@
+import Link from "next/link";
 import { Section } from "@/components/ui/Section";
-import { Button } from "@/components/ui/Button";
 
+// Note: component name retained for import compatibility; content is now three doors.
 export function TwoWaysIn() {
   return (
-    <Section className="bg-stone-50">
-      <h2 className="text-center text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">
-        Two ways in.
-      </h2>
-      <div className="mt-14 grid gap-8 lg:grid-cols-2">
-        {/* Operator Card */}
-        <div className="rounded-2xl border border-stone-200 bg-white p-8 sm:p-10">
+    <Section className="bg-white">
+      <div className="mx-auto max-w-3xl text-center">
+        <h2 className="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">
+          Every city begins with a first fifty.
+        </h2>
+        <p className="mt-6 text-lg leading-relaxed text-stone-600">
+          The Living City will eventually house 50,000 people across 5,040 zones, built
+          in four phases over roughly a decade. But it begins with fifty. We are
+          selecting the first fifty founders right now, from a global pool, to break
+          ground on Phase 1. Which door is yours?
+        </p>
+      </div>
+
+      <div className="mt-14 grid gap-6 lg:grid-cols-3">
+        {/* Card 1 — Investors */}
+        <div className="flex flex-col rounded-2xl border border-stone-200 bg-white p-8">
           <p className="text-xs font-semibold uppercase tracking-widest text-stone-400">
-            Bring Capital &amp; Expertise
+            Capital
           </p>
-          <h3 className="mt-3 text-2xl font-bold text-stone-900">Zone Operators</h3>
-          <p className="mt-4 text-base leading-relaxed text-stone-600">
-            You invest $125K&ndash;$1M. You get land&mdash;a paired town-center plot and an
-            outer production zone. You get infrastructure funded mostly by federal grants. You
-            keep the majority of your profits, earn a preferred return, and build real equity.
+          <h3 className="mt-3 text-xl font-bold text-stone-900">Back the founding.</h3>
+          <p className="mt-4 flex-1 text-sm leading-relaxed text-stone-600">
+            A land-backed bet on a real city. Worst case, the land pays for itself. Best
+            case, you helped found a city designed to last.
           </p>
-          <ul className="mt-6 space-y-2.5 text-sm text-stone-600">
-            <li className="flex items-start gap-2">
-              <span className="mt-0.5 text-stone-400">&bull;</span>
-              1&ndash;10 acres (paired locations)
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-0.5 text-stone-400">&bull;</span>
-              6&ndash;9% preferred return on capital
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-0.5 text-stone-400">&bull;</span>
-              65&ndash;80% profit split (you keep the majority)
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-0.5 text-stone-400">&bull;</span>
-              Federal grants covering most infrastructure
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="mt-0.5 text-stone-400">&bull;</span>
-              4,999 other enterprises as your customer base
-            </li>
-          </ul>
-          <p className="mt-6 text-sm font-medium text-stone-800">
-            This is not a franchise. You own your zone.
-          </p>
-          <div className="mt-8">
-            <Button href="/operator">Apply as Zone Operator</Button>
+          <div className="mt-6">
+            <Link
+              href="/investors"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-stone-600"
+            >
+              Read the investor memo <span aria-hidden="true">&rarr;</span>
+            </Link>
           </div>
         </div>
 
-        {/* Builder Card */}
-        <div className="rounded-2xl border border-stone-200 bg-white p-8 sm:p-10">
+        {/* Card 2 — Operators */}
+        <div className="flex flex-col rounded-2xl border border-stone-200 bg-white p-8">
           <p className="text-xs font-semibold uppercase tracking-widest text-stone-400">
-            Bring Genius &amp; Intensity
+            Capital + Operational Expertise
           </p>
-          <h3 className="mt-3 text-2xl font-bold text-stone-900">Civilization Builders</h3>
-          <p className="mt-4 text-base leading-relaxed text-stone-600">
-            Manhattan Project meets Burning Man meets Y Combinator. But permanent. On real
-            land. Building a real civilization. Come for 3&ndash;12 months. Bring your skill
-            and your intensity. Room and board. Equity in the founding.
+          <h3 className="mt-3 text-xl font-bold text-stone-900">
+            Own a zone. Anchor the economy.
+          </h3>
+          <p className="mt-4 flex-1 text-sm leading-relaxed text-stone-600">
+            Invest $125K&ndash;$1M. Own 1&ndash;10 paired acres. Run a specialized
+            enterprise plugged into the city&rsquo;s coordination engine. Structured exit
+            available.
           </p>
-          <div className="mt-6 space-y-3">
-            {[
-              { tier: "Founding Builder", cost: "Stipend", desc: "Exceptional talent. Maximum equity." },
-              { tier: "Apprentice", cost: "$0", desc: "Full-time. Room and board provided." },
-              { tier: "Builder", cost: "$500\u2013$1K/mo", desc: "40+ hours/week. Your skill applied." },
-              { tier: "Craftsman", cost: "$2K/mo", desc: "15 hrs/week. Private housing." },
-              { tier: "Explorer", cost: "$4K/mo", desc: "10 hrs/week. Evaluating the vision." },
-            ].map((t) => (
-              <div key={t.tier} className="flex items-baseline justify-between text-sm">
-                <span className="font-medium text-stone-800">{t.tier}</span>
-                <span className="text-stone-500">{t.cost}</span>
-              </div>
-            ))}
+          <div className="mt-6">
+            <Link
+              href="/operator"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-stone-600"
+            >
+              See the operator offer <span aria-hidden="true">&rarr;</span>
+            </Link>
           </div>
-          <p className="mt-6 text-sm font-medium text-stone-800">
-            &ldquo;I was one of the first 50.&rdquo;
+        </div>
+
+        {/* Card 3 — Founding Cohort */}
+        <div className="flex flex-col rounded-2xl border border-stone-200 bg-white p-8">
+          <p className="text-xs font-semibold uppercase tracking-widest text-stone-400">
+            Frontier Work
           </p>
-          <div className="mt-8">
-            <Button href="/builder">Apply as Civilization Builder</Button>
+          <h3 className="mt-3 text-xl font-bold text-stone-900">
+            Be one of the first fifty.
+          </h3>
+          <p className="mt-4 flex-1 text-sm leading-relaxed text-stone-600">
+            A three-to-twelve month residency for elite engineers, researchers, designers,
+            and creators. Work on frontier problems &mdash; autonomous systems, AI,
+            advanced manufacturing, media, governance &mdash; while the city gets built.
+            Founding equity on completion.
+          </p>
+          <div className="mt-6">
+            <Link
+              href="/builder"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-stone-600"
+            >
+              See the residency tracks <span aria-hidden="true">&rarr;</span>
+            </Link>
           </div>
         </div>
       </div>

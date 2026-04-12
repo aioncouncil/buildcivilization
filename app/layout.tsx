@@ -10,22 +10,22 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Build Civilization | Open Access to the Good Life",
+  title: "The Living City | A city engineered to make your best self inevitable",
   description:
-    "15,491 acres on Tennessee\u2019s Cumberland Plateau. 50 founding spots. Two ways in: Zone Operator or Civilization Builder. Apply now.",
+    "A real city on 15,491 acres of Tennessee's Cumberland Plateau, built so the things that matter most stop being uphill fights. Phase 1 breaks ground this year.",
   openGraph: {
-    title: "Build Civilization",
+    title: "The Living City",
     description:
-      "We\u2019re building a city from scratch. 15,000 acres. 50 founders. Apply.",
+      "A living city engineered to make your best self inevitable. 15,491 acres in Tennessee. Phase 1 breaks ground this year.",
     url: "https://buildcivilization.com",
-    siteName: "Build Civilization",
+    siteName: "The Living City",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Build Civilization",
+    title: "The Living City",
     description:
-      "We\u2019re building a city from scratch. 15,000 acres. 50 founders. Apply.",
+      "A living city engineered to make your best self inevitable. 15,491 acres in Tennessee.",
   },
 };
 

@@ -1,54 +1,55 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { AB_COOKIE, HEADLINES, pickVariant, type ABVariant } from "@/lib/ab";
-import { Button } from "@/components/ui/Button";
-
-function getCookie(name: string): string | null {
-  if (typeof document === "undefined") return null;
-  const match = document.cookie.match(new RegExp(`(?:^|; )${name}=([^;]*)`));
-  return match ? decodeURIComponent(match[1]) : null;
-}
-
-function setCookie(name: string, value: string, days: number) {
-  const expires = new Date(Date.now() + days * 864e5).toUTCString();
-  document.cookie = `${name}=${encodeURIComponent(value)};expires=${expires};path=/;SameSite=Lax`;
-}
+import Link from "next/link";
 
 export function Hero() {
-  const [variant, setVariant] = useState<ABVariant | null>(null);
-
-  useEffect(() => {
-    const existing = getCookie(AB_COOKIE) as ABVariant | null;
-    if (existing && existing in HEADLINES) {
-      setVariant(existing);
-    } else {
-      const v = pickVariant();
-      setCookie(AB_COOKIE, v, 30);
-      setVariant(v);
-    }
-  }, []);
-
   return (
-    <section className="px-6 pb-20 pt-24 sm:pb-28 sm:pt-32">
-      <div className="mx-auto max-w-4xl text-center">
-        <h1
-          className={`text-4xl font-bold leading-tight tracking-tight text-stone-900 sm:text-5xl lg:text-6xl transition-opacity duration-300 ${variant ? "opacity-100" : "opacity-0"}`}
-        >
-          {variant ? HEADLINES[variant] : HEADLINES.A}
-        </h1>
-        <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-stone-600 sm:text-xl">
-          15,491 acres of resource-rich mountain land in Tennessee. Coal mines, silica sand,
-          a railroad, hardwood forests, and federal grants covering 50&ndash;80% of
-          infrastructure. We&rsquo;re selecting 50 founders to build the first designed
-          civilization.
-        </p>
-        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <Button href="/operator">Apply as Zone Operator</Button>
-          <Button href="/builder" variant="secondary">
-            Apply as Civilization Builder
-          </Button>
+    <section className="px-6 pb-16 pt-20 sm:pb-20 sm:pt-28">
+      <div className="mx-auto max-w-5xl">
+        <div className="text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+            The Living City
+          </p>
+          <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-bold leading-[1.1] tracking-tight text-stone-900 sm:text-5xl lg:text-6xl">
+            A living city engineered to make your best self inevitable.
+          </h1>
+          <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-stone-600 sm:text-xl">
+            A real city on 15,491 acres in Tennessee, built so the things that matter most
+            stop being uphill fights.
+          </p>
+          <div className="mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center">
+            <Link
+              href="/investors"
+              className="inline-flex items-center justify-center rounded-full bg-stone-900 px-7 py-3.5 text-sm font-semibold text-white hover:bg-stone-800"
+            >
+              For Investors
+            </Link>
+            <Link
+              href="/operator"
+              className="inline-flex items-center justify-center rounded-full border border-stone-300 bg-white px-7 py-3.5 text-sm font-semibold text-stone-900 hover:bg-stone-50"
+            >
+              Run a Zone
+            </Link>
+            <Link
+              href="/builder"
+              className="inline-flex items-center justify-center rounded-full border border-stone-300 bg-white px-7 py-3.5 text-sm font-semibold text-stone-900 hover:bg-stone-50"
+            >
+              Build With Us
+            </Link>
+          </div>
+          <p className="mt-6 text-sm italic text-stone-500">
+            Phase 1 breaks ground this year. Applications are open.
+          </p>
         </div>
+
+        <div className="mt-16 aspect-[16/9] overflow-hidden rounded-2xl bg-stone-200 shadow-lg">
+          <img
+            src="/images/land/elk-valley-1.jpg"
+            alt="Cumberland Plateau, Tennessee — Elk Valley tract"
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <p className="mt-3 text-center text-xs text-stone-500">
+          Cumberland Plateau, Tennessee &middot; Elk Valley tract, 15,491 acres under LOI
+        </p>
       </div>
     </section>
   );
