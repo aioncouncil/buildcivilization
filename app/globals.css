@@ -1,29 +1,59 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #ffffff;
-  --color-foreground: #0a0a0a;
-  --color-stone-50: #fafaf9;
-  --color-stone-100: #f5f5f4;
-  --color-stone-200: #e7e5e4;
-  --color-stone-300: #d6d3d1;
-  --color-stone-400: #a8a29e;
-  --color-stone-500: #78716c;
-  --color-stone-600: #57534e;
-  --color-stone-700: #44403c;
-  --color-stone-800: #292524;
-  --color-stone-900: #1c1917;
-  --color-amber-600: #d97706;
-  --color-amber-700: #b45309;
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* The Living City palette */
+  --color-background: #F4EFE7;
+  --color-foreground: #11110F;
+
+  /* Remapping stone tokens to the new palette so all existing
+     component classes (bg-stone-50, text-stone-900, etc.) automatically
+     pick up the new look without changing any component code. */
+  --color-stone-50: #F4EFE7;   /* Plateau Paper */
+  --color-stone-100: #EDE7DC;  /* Paper darker */
+  --color-stone-200: #DED6CA;  /* Stone Border */
+  --color-stone-300: #C8BFB2;  /* Border lighter */
+  --color-stone-400: #A09688;  /* Muted */
+  --color-stone-500: #746C62;  /* Weathered Type */
+  --color-stone-600: #5E564D;  /* Weathered darker */
+  --color-stone-700: #44403C;  /* Deep */
+  --color-stone-800: #292420;  /* Coal lighter */
+  --color-stone-900: #11110F;  /* Coal */
+
+  /* Named accent colors */
+  --color-forest: #314137;
+  --color-clay: #8A5B44;
+  --color-brass: #B08A4A;
+
+  /* Amber → Clay mapping */
+  --color-amber-600: #8A5B44;
+  --color-amber-700: #6E4836;
+
+  /* Fonts */
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-newsreader);
+  --font-mono: var(--font-ibm-plex-mono);
 }
 
 body {
   background: var(--color-background);
   color: var(--color-foreground);
+  font-size: 19px;
+  line-height: 1.65;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Serif for meaning: all headings use Newsreader */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  letter-spacing: -0.02em;
+}
+
+/* Mono for proof: date labels, captions with this class */
+.font-proof {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.02em;
 }

@@ -2,55 +2,54 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="px-6 pb-16 pt-20 sm:pb-20 sm:pt-28">
-      <div className="mx-auto max-w-5xl">
-        <div className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
-            The Living City
-          </p>
-          <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-bold leading-[1.1] tracking-tight text-stone-900 sm:text-5xl lg:text-6xl">
-            A living city engineered to make your best self inevitable.
-          </h1>
-          <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-stone-600 sm:text-xl">
-            A real city on 15,491 acres in Tennessee, built so the things that matter most
-            stop being uphill fights.
-          </p>
-          <div className="mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center">
-            <Link
-              href="/investors"
-              className="inline-flex items-center justify-center rounded-full bg-stone-900 px-7 py-3.5 text-sm font-semibold text-white hover:bg-stone-800"
-            >
-              For Investors
-            </Link>
-            <Link
-              href="/operator"
-              className="inline-flex items-center justify-center rounded-full border border-stone-300 bg-white px-7 py-3.5 text-sm font-semibold text-stone-900 hover:bg-stone-50"
-            >
-              Run a Zone
-            </Link>
-            <Link
-              href="/builder"
-              className="inline-flex items-center justify-center rounded-full border border-stone-300 bg-white px-7 py-3.5 text-sm font-semibold text-stone-900 hover:bg-stone-50"
-            >
-              Build With Us
-            </Link>
-          </div>
-          <p className="mt-6 text-sm italic text-stone-500">
-            Phase 1 breaks ground this year. Applications are open.
-          </p>
-        </div>
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/images/hero/fog-mountain.jpg')" }}
+      />
+      {/* Dark gradient overlay — horizon in upper third */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/45 to-black/60" />
 
-        <div className="mt-16 aspect-[16/9] overflow-hidden rounded-2xl bg-stone-200 shadow-lg">
-          <img
-            src="/images/land/elk-valley-1.jpg"
-            alt="Cumberland Plateau, Tennessee — Elk Valley tract"
-            className="h-full w-full object-cover"
-          />
+      {/* Content */}
+      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
+        <p className="font-mono text-xs font-medium uppercase tracking-[0.3em] text-white/70">
+          The Living City
+        </p>
+        <h1 className="mx-auto mt-8 max-w-4xl text-[42px] leading-[1.05] font-bold tracking-tight text-white sm:text-[64px] lg:text-[80px]">
+          A living city engineered to make your best self inevitable.
+        </h1>
+        <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/80 sm:text-xl">
+          A real city on 15,491 acres in Tennessee, built so the things that matter most
+          stop being uphill fights.
+        </p>
+        <div className="mt-12 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center">
+          <Link
+            href="/investors"
+            className="inline-flex items-center justify-center rounded-sm bg-white px-8 py-4 text-sm font-semibold text-stone-900 transition-colors hover:bg-stone-100"
+          >
+            For Investors
+          </Link>
+          <Link
+            href="/operator"
+            className="inline-flex items-center justify-center rounded-sm border border-white/40 bg-transparent px-8 py-4 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+          >
+            Run a Zone
+          </Link>
+          <Link
+            href="/builder"
+            className="inline-flex items-center justify-center rounded-sm border border-white/40 bg-transparent px-8 py-4 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+          >
+            Build With Us
+          </Link>
         </div>
-        <p className="mt-3 text-center text-xs text-stone-500">
-          Cumberland Plateau, Tennessee &middot; Elk Valley tract, 15,491 acres under LOI
+        <p className="mt-8 font-mono text-xs tracking-wide text-white/50">
+          Phase 1 breaks ground this year. Applications are open.
         </p>
       </div>
+
+      {/* Bottom fade to page background */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-stone-50 to-transparent" />
     </section>
   );
 }
