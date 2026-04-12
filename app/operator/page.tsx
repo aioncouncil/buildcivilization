@@ -6,7 +6,7 @@ import { OperatorForm } from "@/components/forms/OperatorForm";
 export const metadata: Metadata = {
   title: "Zone Operators | The Living City",
   description:
-    "Run a specialized enterprise plugged into a citywide coordination engine. Invest $125K–$1M. Own 1–10 acres. Anchor an economy.",
+    "Own the zone that unlocks the next layer of the city. Build one of the core industries of the first living city.",
 };
 
 export default function OperatorPage() {
@@ -15,312 +15,116 @@ export default function OperatorPage() {
       {/* Hero */}
       <section className="px-6 pb-12 pt-20 sm:pb-16 sm:pt-28">
         <div className="mx-auto max-w-3xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
-            Zone Operators
-          </p>
+          <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-stone-500">Zone Operators</p>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-stone-900 sm:text-5xl">
-            Run an art inside a larger engine.
+            Own the zone that unlocks the next layer of the city.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-stone-600">
-            A zone is a specialized enterprise &mdash; ceramics, forge, bakery, clinic,
-            workshop, brewery &mdash; plugged into a citywide coordination engine designed
-            so that each art feeds and strengthens the others.
+            You are not opening a small business in the woods. You are building one of the
+            city&rsquo;s core industries &mdash; robotics, fabrication, materials, food,
+            health, hospitality, research, logistics, media, or manufacturing &mdash;
+            inside a system designed to make every zone more valuable.
           </p>
           <div className="mt-10 flex flex-col items-stretch gap-3 sm:flex-row">
-            <a
-              href="#apply"
-              className="inline-flex items-center justify-center rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white hover:bg-stone-800"
-            >
-              Apply to run a zone
-            </a>
-            <a
-              href="mailto:operators@buildcivilization.com?subject=Operator%20Term%20Sheet%20Request"
-              className="inline-flex items-center justify-center rounded-full border border-stone-300 bg-white px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-50"
-            >
-              Request the operator term sheet
-            </a>
+            <a href="#apply" className="inline-flex items-center justify-center rounded-sm bg-stone-900 px-6 py-3 text-sm font-semibold text-white hover:bg-stone-800">Apply to run a zone</a>
+            <a href="mailto:operators@buildcivilization.com?subject=Operator%20Term%20Sheet" className="inline-flex items-center justify-center rounded-sm border border-stone-300 px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-50">Request the term sheet</a>
           </div>
         </div>
       </section>
 
-      {/* Why this */}
-      <Section className="bg-white">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            Why this.
-          </h2>
-          <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-600">
-            <p>
-              You know how to operate. You have made payroll, run a P&amp;L, hired and
-              fired, shipped and missed. You are good at it. You are also doing it
-              inside a system that does not care about you &mdash; a city that scatters
-              your energies, buries you in friction, and offers nothing in return beyond
-              rent.
-            </p>
-            <p>
-              What if your enterprise were a working organ inside a city organized around
-              exactly the kinds of things you build? Where the city itself is your first
-              customer, your co-recruiter, and your peer network &mdash; because it was
-              designed to be? That is what a zone is.
-            </p>
-          </div>
-        </div>
-      </Section>
-
-      {/* What a zone is */}
+      {/* Why This */}
       <Section className="bg-stone-50">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            What a zone is.
-          </h2>
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">Why this.</h2>
           <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-600">
-            <p>
-              A zone is a specialized art &mdash; ceramics, forge, bakery, timber mill,
-              workshop, school, brewery, research lab &mdash; with its own land, tools,
-              crew, and economics. You get a <strong>production plot</strong> (1 to 10
-              acres, where the real work happens) paired with a{" "}
-              <strong>town-center plot</strong> (where your presence lives in the daily
-              rhythm of the city). Together they form your zone. You control the
-              enterprise, and the land rights and improvement mechanics are spelled out
-              in the term sheet.
-            </p>
-            <p>
-              But the point is not to leave you alone with a plot and a prayer. Your
-              zone is plugged into the city&rsquo;s coordination engine. Your needs are
-              visible to the shared list the city maintains. The things you build feed
-              other zones. The things other zones build feed you. Apprentices from the
-              founding cohort come through your crew. Contests and festivals give your
-              work visible honor.
-            </p>
-            <p className="font-medium text-stone-900">
-              The city is not your competition. The city is the reason your art makes
-              sense here and nowhere else.
-            </p>
-          </div>
-          <div className="mt-8">
-            <Link
-              href="/how-it-works"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-stone-600"
-            >
-              See how the engine works <span aria-hidden="true">&rarr;</span>
-            </Link>
+            <p>You already know how to operate. You have made payroll, shipped products, balanced risk, hired, fired, built teams, and solved problems under pressure. You also know how much of ordinary business life is wasted on friction that has nothing to do with the craft itself.</p>
+            <p>The Living City is built to change that.</p>
+            <p>A zone here is not an isolated shop hoping for foot traffic. It is one of the industries the city itself needs in order to unlock the next age of its development. The city becomes your first customer, your first network, your first recruiting environment, and your first context for compounding.</p>
           </div>
         </div>
       </Section>
 
-      {/* Example Zones */}
+      {/* What a Zone Is */}
       <Section className="bg-white">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            Three example zones.
-          </h2>
-          <div className="mt-6 rounded-2xl border border-stone-900 bg-stone-50 p-6">
-            <p className="text-sm font-semibold text-stone-900">A note on what your capital covers.</p>
-            <p className="mt-2 text-sm leading-relaxed text-stone-700">
-              The city&rsquo;s capital (the seed round, the federal grant programs, the
-              utility district bonds) pays for the site work, the structural shells, the
-              shared utilities, and the communal infrastructure. Your capital &mdash;
-              the $125K to $1M below &mdash; is for the interior buildout, the
-              specialized equipment, and the working capital that gets your zone
-              running.{" "}
-              <strong className="text-stone-900">
-                The shell is ours. The enterprise is yours.
-              </strong>{" "}
-              The capex figures in each example are the operator&rsquo;s side of that
-              line.
-            </p>
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">What a zone is.</h2>
+          <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-600">
+            <p>A zone is a specialized enterprise with land, tools, crew, economics, and civic importance. Each zone combines a <strong>production plot</strong> and a <strong>town-facing presence</strong>. The production plot is where the real work happens. The town-facing presence is where the city touches your enterprise in daily life.</p>
+            <p>But the real point is not the parcel. The point is the position in the machine.</p>
+            <p className="font-medium text-stone-900">The best way to understand a zone is not &ldquo;small business.&rdquo; It is &ldquo;the industry the city would otherwise be missing.&rdquo;</p>
           </div>
+          <div className="mt-8"><Link href="/how-it-works" className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-stone-600">See how the engine works <span aria-hidden="true">&rarr;</span></Link></div>
+        </div>
+      </Section>
 
-          <div className="mt-10 space-y-10">
-            {EXAMPLE_ZONES.map((zone) => (
-              <div key={zone.name} className="border-t border-stone-200 pt-8">
-                <h3 className="text-xl font-bold text-stone-900">{zone.name}</h3>
-                <dl className="mt-4 space-y-3 text-sm leading-relaxed text-stone-600">
-                  {zone.rows.map((row) => (
-                    <div key={row.label} className="flex flex-col gap-1 sm:flex-row sm:gap-3">
-                      <dt className="w-full shrink-0 font-semibold text-stone-900 sm:w-40">
-                        {row.label}
-                      </dt>
-                      <dd>{row.value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
+      {/* Industries We Need */}
+      <Section className="bg-stone-50">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">The industries that unlock the city&rsquo;s next age.</h2>
+          <ul className="mt-8 grid gap-3 sm:grid-cols-2 text-base text-stone-600">
+            {["Robotics and autonomous systems","Materials and fabrication","Glass / solar / silica-derived manufacturing","Food systems and fermentation","Diagnostics / clinical infrastructure","Construction systems and engineered materials","Water / waste / utility support","Logistics and movement","Research and educational infrastructure","Media, publishing, performance, and civic memory"].map(i => (
+              <li key={i} className="flex gap-2"><span className="text-stone-400">&bull;</span>{i}</li>
             ))}
-          </div>
-
-          <p className="mt-10 text-sm italic text-stone-500">
-            These are not committed. If you are the right operator, your zone can
-            replace any of them.
-          </p>
+          </ul>
+          <p className="mt-6 text-sm font-medium text-stone-900">If you can run one of those well, you are not decorating the city. You are changing what becomes possible inside it.</p>
         </div>
       </Section>
 
-      {/* The offer */}
-      <Section className="bg-stone-50">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            The offer.
-          </h2>
-          <div className="mt-8 overflow-hidden rounded-2xl border border-stone-200 bg-white">
-            <dl className="divide-y divide-stone-200">
-              {[
-                ["Investment", "$125K to $1M across four tiers"],
-                ["Land", "1 to 10 paired acres"],
-                ["Infrastructure", "Majority covered by federal and state grants"],
-                ["Returns", "Preferred return + majority profit split"],
-                ["Governance", "Seats scale with tier"],
-                ["Exit", "Structured buyback after three years"],
-              ].map(([k, v]) => (
-                <div key={k} className="flex flex-col sm:flex-row">
-                  <dt className="bg-stone-50 px-4 py-3 text-sm font-semibold text-stone-900 sm:w-1/3">
-                    {k}
-                  </dt>
-                  <dd className="px-4 py-3 text-sm text-stone-600 sm:w-2/3">{v}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-
-          <h3 className="mt-12 text-xl font-bold text-stone-900">Four tiers</h3>
-          <div className="mt-6 space-y-4 text-base text-stone-600">
-            <p>
-              <strong className="text-stone-900">Scout &mdash; $125K.</strong> One paired
-              acre. Single-enterprise zone, run by one operator.
-            </p>
-            <p>
-              <strong className="text-stone-900">Pathfinder &mdash; $250K.</strong> Two to
-              three paired acres. A proven business ready to scale.
-            </p>
-            <p>
-              <strong className="text-stone-900">Warden &mdash; $500K.</strong> Four to
-              six paired acres. Multi-unit enterprise with a small team.
-            </p>
-            <p>
-              <strong className="text-stone-900">Architect &mdash; $1M.</strong> Eight to
-              ten paired acres. Governance seat on the operator council.
-            </p>
-          </div>
-          <p className="mt-6 text-sm italic text-stone-500">
-            Full economic terms, preferred returns, profit splits, and governance
-            mechanics are in the operator term sheet. Request it and you will receive it
-            the same day.
-          </p>
-        </div>
-      </Section>
-
-      {/* What you get on day one */}
+      {/* The Offer */}
       <Section className="bg-white">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            What you get on day one.
-          </h2>
-          <p className="mt-4 text-sm italic text-stone-500">
-            Phase 1 is small, and we want you to know exactly what that means. These are
-            the things that exist when you arrive &mdash; not the full-scale promises.
-          </p>
-          <ul className="mt-8 space-y-5 text-base leading-relaxed text-stone-600">
-            <li className="flex gap-3">
-              <span className="text-stone-400">&bull;</span>
-              <span>
-                <strong className="text-stone-900">
-                  Your first customers: the city itself, the founding cohort, and the
-                  first wave of zones.
-                </strong>{" "}
-                As the network fills in, each new zone becomes both a supplier and a
-                customer to the others.
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-stone-400">&bull;</span>
-              <span>
-                <strong className="text-stone-900">Federal grant-funded infrastructure</strong>{" "}
-                &mdash; water, fiber, power, roads.
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-stone-400">&bull;</span>
-              <span>
-                <strong className="text-stone-900">Coordination, not automation.</strong>{" "}
-                In Phase 1, coordination happens in person and on shared lists. The
-                software-driven version arrives with scale.
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-stone-400">&bull;</span>
-              <span>
-                <strong className="text-stone-900">
-                  A founding cohort rotating through your crew
-                </strong>
-                , bringing skills, prototypes, and apprenticeships.
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-stone-400">&bull;</span>
-              <span>
-                <strong className="text-stone-900">A governance seat</strong> that scales
-                with your tier.
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-stone-400">&bull;</span>
-              <span>
-                <strong className="text-stone-900">Shared infrastructure</strong> &mdash;
-                communal kitchen, forge, workshop, lab, warehouse &mdash; built out as
-                the cohort and the zones complete them.
-              </span>
-            </li>
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">The offer.</h2>
+          <p className="mt-6 text-sm text-stone-500">The city&rsquo;s capital pays for site work, structural shells, shared utilities, and communal infrastructure. Your capital is for the interior buildout, specialized equipment, and working capital. The shell is ours. The enterprise is yours.</p>
+          <div className="mt-8 overflow-hidden rounded-sm border border-stone-200 bg-stone-50">
+            <table className="w-full text-left text-sm">
+              <thead className="bg-stone-100 text-stone-900"><tr><th className="px-4 py-3 font-semibold">Tier</th><th className="px-4 py-3 font-semibold text-right">Investment</th><th className="px-4 py-3 font-semibold">Ideal use</th></tr></thead>
+              <tbody className="divide-y divide-stone-200 bg-white text-stone-600">
+                <tr><td className="px-4 py-3 font-medium text-stone-900">Scout</td><td className="px-4 py-3 text-right">$125K</td><td className="px-4 py-3">First single-enterprise zone</td></tr>
+                <tr><td className="px-4 py-3 font-medium text-stone-900">Pathfinder</td><td className="px-4 py-3 text-right">$250K</td><td className="px-4 py-3">Proven operator ready to scale</td></tr>
+                <tr><td className="px-4 py-3 font-medium text-stone-900">Warden</td><td className="px-4 py-3 text-right">$500K</td><td className="px-4 py-3">Multi-unit or technical build</td></tr>
+                <tr><td className="px-4 py-3 font-medium text-stone-900">Architect</td><td className="px-4 py-3 text-right">$1M</td><td className="px-4 py-3">Major zone, governance seat</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-6 text-sm italic text-stone-500">Full economics, preferred terms, land-rights structure, and exit provisions live in the term sheet.</p>
+        </div>
+      </Section>
+
+      {/* What You Get */}
+      <Section className="bg-stone-50">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">What you get on day one.</h2>
+          <p className="mt-4 text-sm italic text-stone-500">Phase 1 reality, not future-state fantasy.</p>
+          <ul className="mt-8 space-y-4 text-base leading-relaxed text-stone-600">
+            <li className="flex gap-3"><span className="text-stone-400">&bull;</span><span>The city itself as your first customer</span></li>
+            <li className="flex gap-3"><span className="text-stone-400">&bull;</span><span>The founding cohort as your first talent and apprenticeship environment</span></li>
+            <li className="flex gap-3"><span className="text-stone-400">&bull;</span><span>Shared infrastructure as it comes online</span></li>
+            <li className="flex gap-3"><span className="text-stone-400">&bull;</span><span>A visible backlog of what the city most needs next</span></li>
+            <li className="flex gap-3"><span className="text-stone-400">&bull;</span><span>Weekly contests and milestone festivals that surface and honor the best work</span></li>
+            <li className="flex gap-3"><span className="text-stone-400">&bull;</span><span>Governance influence that scales with your tier</span></li>
+            <li className="flex gap-3"><span className="text-stone-400">&bull;</span><span>The chance to shape how your industry is built into the city from the beginning</span></li>
           </ul>
+          <p className="mt-6 text-sm font-medium text-stone-900">You are not arriving to sell into a finished economy. You are arriving to help create one.</p>
+        </div>
+      </Section>
+
+      {/* At Scale */}
+      <Section className="bg-stone-900 text-white">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">What the role becomes at scale.</h2>
+          <p className="mt-6 text-base leading-relaxed text-stone-300">At full scale, operators are not just running profitable enterprises. They are stewarding whole domains of civilization. A single zone can become a supplier to hundreds of other zones, the anchor of a domain festival, the apprenticeship path for an entire craft, the place where new technologies get tested first, and the institution that changes what thousands of people can do.</p>
+          <p className="mt-4 text-base font-medium text-white">This is why the best operators will want to be early. The first people to build a domain become part of the city&rsquo;s permanent memory.</p>
         </div>
       </Section>
 
       {/* Apply */}
-      <Section className="bg-stone-50" >
+      <Section className="bg-white">
         <div id="apply" className="mx-auto max-w-2xl">
-          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            Apply to run a zone.
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-stone-600">
-            Ten minutes. One 60-second video. We read every application personally.
-          </p>
-          <div className="mt-10">
-            <OperatorForm />
-          </div>
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">Apply to run a zone.</h2>
+          <p className="mt-4 text-base leading-relaxed text-stone-600">Ten minutes. One 60-second video. We read every application personally.</p>
+          <div className="mt-10"><OperatorForm /></div>
         </div>
       </Section>
     </>
   );
 }
-
-const EXAMPLE_ZONES = [
-  {
-    name: "The Brewery",
-    rows: [
-      { label: "Land", value: "3 paired acres (production plot near a spring; town-center plot on the central boulevard)" },
-      { label: "CapEx (operator)", value: "approximately $400K (brewhouse, fermenters, taproom buildout)" },
-      { label: "First customers", value: "the communal mess hall (daily orders), the festival calendar (monthly volume spikes), and every other zone that wants to keep beer on premises" },
-      { label: "Shared inputs", value: "spring water from the city's reservoir, barley from on-site agriculture, wood for barrels from the timber mill" },
-      { label: "Margin shape", value: "high. Direct-to-customer, minimal distribution, low marketing costs because the customers live within walking distance" },
-    ],
-  },
-  {
-    name: "The Drone and Robotics Workshop",
-    rows: [
-      { label: "Land", value: "2 paired acres (fabrication bay near the production district; town-center storefront for demos and sales)" },
-      { label: "CapEx (operator)", value: "approximately $600K (CNC mills, 3D printers, electronics bench, flight test range, inventory)" },
-      { label: "First customers", value: "every other zone, and the city itself. The workshop builds autonomous inspection drones for the infrastructure layer, delivery drones for the logistics system, fabrication tooling for the production zones, and custom robotics for the research residents." },
-      { label: "Shared inputs", value: "electronics and rare components from regional suppliers, structural materials from the manufacturing zones, test airspace on the 15,000 acres" },
-      { label: "Margin shape", value: "high. Specialized production, high-value end markets, and a built-in relationship with the research cohort pushing your product roadmap" },
-    ],
-  },
-  {
-    name: "The Timber Mill and Joinery",
-    rows: [
-      { label: "Land", value: "3 paired acres (production plot near the access road for hauling; town-center plot with a small showroom and a joinery workshop)" },
-      { label: "CapEx (operator)", value: "approximately $500K (mid-size sawmill, kiln, planer, edge-banding and joinery tools, plus six months of working capital)" },
-      { label: "First customers", value: "every other zone that needs lumber — the brewery's barrels, the bakery's shelving, the ceramics kiln's cord wood, the greenhouse and kitchen framing, the first cabins, the workshop benches, the central hall's flooring. The city itself is your biggest Phase 1 buyer." },
-      { label: "Shared inputs", value: "timber from the property's 15,000 acres of hardwood forest (already under active harvest), sharpening and maintenance from the fabrication shop, power from the utility district" },
-      { label: "Margin shape", value: "solid from day one. Raw material is on-site. Customers are walking distance. Specialized joinery for outside buyers comes later as the city's brand grows." },
-    ],
-  },
-];

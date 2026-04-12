@@ -68,7 +68,7 @@ export default function LandPage() {
               },
               {
                 title: "Estimated in-ground gross value",
-                body: "Third-party estimates of the geological resources on the property (silica sand, coal reserves, oil and gas, timber). These are professional estimates at current market prices — not a guarantee of recoverable value. This is where the \"$11B\" figure comes from, and we are explicit that it is an estimate of gross in-ground value, not a commitment of extractable revenue.",
+                body: "Third-party estimates of the geological resources on the property (silica sand, coal reserves, oil and gas, timber). These are professional estimates at current market prices — not a guarantee of recoverable value. The current estimate is approximately $250M+ in gross in-ground value. We are explicit that this is an estimate, not a commitment of extractable revenue.",
               },
               {
                 title: "Projected infrastructure coverage",
@@ -174,7 +174,7 @@ export default function LandPage() {
                 <strong className="text-stone-900">
                   Estimated in-ground gross geological value:
                 </strong>{" "}
-                approximately $11 billion (third-party estimate at current prices; see
+                approximately $250 million (third-party estimates at current prices; see
                 disclosure above)
               </span>
             </li>
@@ -184,7 +184,7 @@ export default function LandPage() {
                 <strong className="text-stone-900">
                   Current annual revenue from wells and timber:
                 </strong>{" "}
-                approximately $1.5 million (cash-flowing, verifiable)
+                approximately $215,000 (cash-flowing, verifiable from production records)
               </span>
             </li>
             <li className="flex gap-3">
