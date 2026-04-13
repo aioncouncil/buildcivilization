@@ -132,7 +132,7 @@ export function BuilderForm() {
       <button
         type="submit"
         disabled={submitting}
-        className="w-full rounded-full bg-stone-900 py-3.5 text-sm font-semibold text-white hover:bg-stone-800 disabled:opacity-50"
+        className="w-full rounded-sm bg-stone-900 py-3.5 text-sm font-semibold text-white hover:bg-stone-800 disabled:opacity-50"
       >
         {submitting ? "Submitting..." : "Submit Application"}
       </button>

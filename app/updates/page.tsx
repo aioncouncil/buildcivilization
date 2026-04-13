@@ -73,7 +73,7 @@ export default function UpdatesPage() {
           <ul className="mt-8 space-y-5">
             {IN_PROGRESS.map((item) => (
               <li key={item.title} className="flex gap-4">
-                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-stone-400" />
+                <span className="mt-2 h-2 w-2 shrink-0 rounded-sm bg-stone-400" />
                 <div>
                   <p className="font-semibold text-stone-900">{item.title}</p>
                   <p className="mt-1 text-sm leading-relaxed text-stone-600">
@@ -97,7 +97,7 @@ export default function UpdatesPage() {
           </p>
           <a
             href="mailto:updates@buildcivilization.com?subject=Add%20me%20to%20the%20update%20list"
-            className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-100"
+            className="mt-8 inline-flex items-center justify-center rounded-sm bg-white px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-100"
           >
             Add me to the list
           </a>

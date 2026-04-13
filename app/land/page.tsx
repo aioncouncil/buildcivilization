@@ -27,7 +27,7 @@ export default function LandPage() {
             <div className="mt-8">
               <a
                 href="mailto:mars@buildcivilization.com?subject=Site%20Visit%20Request"
-                className="inline-flex items-center justify-center rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white hover:bg-stone-800"
+                className="inline-flex items-center justify-center rounded-sm bg-stone-900 px-6 py-3 text-sm font-semibold text-white hover:bg-stone-800"
               >
                 Book a site visit
               </a>
@@ -133,8 +133,9 @@ export default function LandPage() {
               </thead>
               <tbody className="divide-y divide-stone-200 bg-white text-stone-600">
                 {[
-                  ["Silica sand", "160M+ tons estimated", "In-ground, estimate"],
-                  ["Coal mines", "Pre-existing infrastructure", "Physical, verified"],
+                  ["Silica sand", "75–150M tons estimated, 98.52% SiO₂", "In-ground, verified by 3 labs"],
+                  ["Coal reserves", "161M tons proven (IRTEC survey)", "In-ground, verified"],
+                  ["Coal mines", "Pre-existing infrastructure at 55°F", "Physical, verified"],
                   ["Oil and gas wells", "27 active", "Cash-flowing"],
                   ["Hardwood forest", "15,000 acres", "Cash-flowing (ongoing harvest)"],
                   ["Railroad", "CSX main line", "Physical, verified"],
@@ -372,7 +373,7 @@ export default function LandPage() {
           <div className="mt-10">
             <a
               href="mailto:mars@buildcivilization.com?subject=Site%20Visit%20Request"
-              className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-100"
+              className="inline-flex items-center justify-center rounded-sm bg-white px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-100"
             >
               Book a site visit
             </a>

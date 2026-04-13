@@ -366,6 +366,7 @@ export default function InvestorsPage() {
             </a>
           </div>
           <p className="mt-8 text-xs text-stone-500">
+            The issuing entity is General Temple Inc. (Delaware C-Corporation).
             Investment opportunities are offered only to verified accredited investors
             under applicable federal securities law.
           </p>

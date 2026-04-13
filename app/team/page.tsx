@@ -163,7 +163,7 @@ export default function TeamPage() {
               >
                 <div className="flex flex-wrap items-start justify-between gap-3">
                   <h3 className="text-lg font-bold text-stone-900">{role.title}</h3>
-                  <span className="rounded-full bg-stone-900 px-3 py-1 text-xs font-semibold text-white">
+                  <span className="rounded-sm bg-stone-900 px-3 py-1 text-xs font-semibold text-white">
                     {role.equity}
                   </span>
                 </div>

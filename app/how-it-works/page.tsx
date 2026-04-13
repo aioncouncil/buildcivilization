@@ -39,7 +39,7 @@ export default function HowItWorksPage() {
           </p>
           <ol className="mt-8 space-y-6">
             <li className="flex gap-4">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-900 text-sm font-bold text-white">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-stone-900 text-sm font-bold text-white">
                 1
               </span>
               <div>
@@ -51,7 +51,7 @@ export default function HowItWorksPage() {
               </div>
             </li>
             <li className="flex gap-4">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-700 text-sm font-bold text-white">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-stone-700 text-sm font-bold text-white">
                 2
               </span>
               <div>
@@ -63,7 +63,7 @@ export default function HowItWorksPage() {
               </div>
             </li>
             <li className="flex gap-4">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-500 text-sm font-bold text-white">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-stone-500 text-sm font-bold text-white">
                 3
               </span>
               <div>
@@ -155,7 +155,7 @@ export default function HowItWorksPage() {
           <div className="mt-10 space-y-8">
             {LOOP_STEPS.map((step, i) => (
               <div key={step.title} className="flex gap-5">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-stone-900 text-sm font-bold text-stone-900">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-sm border-2 border-stone-900 text-sm font-bold text-stone-900">
                   {i + 1}
                 </span>
                 <div>
@@ -403,19 +403,19 @@ export default function HowItWorksPage() {
           <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row">
             <Link
               href="/investors"
-              className="inline-flex items-center justify-center rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white hover:bg-stone-800"
+              className="inline-flex items-center justify-center rounded-sm bg-stone-900 px-6 py-3 text-sm font-semibold text-white hover:bg-stone-800"
             >
               Back the founding
             </Link>
             <Link
               href="/operator"
-              className="inline-flex items-center justify-center rounded-full border border-stone-300 px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-50"
+              className="inline-flex items-center justify-center rounded-sm border border-stone-300 px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-50"
             >
               Run a zone
             </Link>
             <Link
               href="/builder"
-              className="inline-flex items-center justify-center rounded-full border border-stone-300 px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-50"
+              className="inline-flex items-center justify-center rounded-sm border border-stone-300 px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-50"
             >
               Join the Founding Cohort
             </Link>
