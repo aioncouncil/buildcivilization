@@ -35,7 +35,7 @@ export default function LandPage() {
           </div>
           <div className="mt-14 aspect-[16/9] overflow-hidden rounded-2xl shadow-lg">
             <img
-              src="/images/land/elk-valley-2.jpg"
+              src="/images/property/photo-050.jpg"
               alt="Elk Valley tract, Cumberland Plateau"
               className="h-full w-full object-cover"
             />
@@ -100,16 +100,13 @@ export default function LandPage() {
             Chattanooga. 4 hours from Atlanta. Active CSX rail through the property.
           </p>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[3, 4, 5].map((n) => (
-              <div
-                key={n}
-                className="aspect-[4/3] overflow-hidden rounded-xl shadow-sm"
-              >
-                <img
-                  src={`/images/land/elk-valley-${n}.jpg`}
-                  alt={`Cumberland Plateau property, view ${n}`}
-                  className="h-full w-full object-cover"
-                />
+            {[
+              { src: "/images/property/photo-070.jpg", alt: "Deep forested valley with road" },
+              { src: "/images/property/photo-170.jpg", alt: "Mountain ridge aerial" },
+              { src: "/images/property/photo-110.jpg", alt: "Ridge vista, blue mountain layers" },
+            ].map((img) => (
+              <div key={img.src} className="aspect-[4/3] overflow-hidden rounded-sm shadow-sm">
+                <img src={img.src} alt={img.alt} className="h-full w-full object-cover" />
               </div>
             ))}
           </div>

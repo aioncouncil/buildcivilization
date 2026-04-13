@@ -1,52 +1,6 @@
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
 
-/* ── Image placeholder — shows designers exactly what goes in each slot ── */
-function ImageSlot({
-  language,
-  description,
-  shot,
-  aspect = "16/9",
-  className = "",
-}: {
-  language: "substrate" | "awakening" | "festival" | "pioneering" | "proof";
-  description: string;
-  shot?: string;
-  aspect?: string;
-  className?: string;
-}) {
-  const colors = {
-    substrate: { border: "border-stone-500/40", label: "text-stone-400", bg: "bg-stone-800" },
-    awakening: { border: "border-[#89E7FF]/30", label: "text-[#89E7FF]", bg: "bg-[#0A0D12]" },
-    festival: { border: "border-[#F1B35B]/30", label: "text-[#F1B35B]", bg: "bg-stone-900" },
-    pioneering: { border: "border-stone-400/30", label: "text-stone-300", bg: "bg-stone-800" },
-    proof: { border: "border-[#4FD36C]/30", label: "text-[#4FD36C]", bg: "bg-[#0A0D12]" },
-  };
-  const c = colors[language];
-  const labels = {
-    substrate: "Substrate Documentary",
-    awakening: "Ancient Technology Awakening",
-    festival: "Festival Luminosity",
-    pioneering: "Age One Pioneering",
-    proof: "Proof / Data Visual",
-  };
-
-  return (
-    <div
-      className={`relative overflow-hidden rounded-sm border border-dashed ${c.border} ${c.bg} flex items-center justify-center ${className}`}
-      style={{ aspectRatio: aspect }}
-    >
-      <div className="text-center px-4 py-6">
-        <p className={`font-mono text-[10px] uppercase tracking-[0.2em] ${c.label}`}>
-          {labels[language]}
-        </p>
-        <p className="mt-2 text-sm text-stone-400">{description}</p>
-        {shot && <p className="mt-1 text-[10px] text-stone-600">{shot}</p>}
-      </div>
-    </div>
-  );
-}
-
 export default function Home() {
   return (
     <>
@@ -55,8 +9,7 @@ export default function Home() {
           Image: one full-bleed dawn aerial of the Plateau
           ═══════════════════════════════════════════════════════════ */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* TODO: Replace with real Heath aerial — dawn ridge with mist, negative space for H1 */}
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/hero/fog-mountain.jpg')" }} />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/property/photo-030.jpg')" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/45 to-black/60" />
 
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
@@ -103,12 +56,9 @@ export default function Home() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2">
             {/* Card 1: Mine → Compute */}
             <div className="rounded-sm border border-white/10 bg-white/5 overflow-hidden">
-              <ImageSlot
-                language="awakening"
-                description="Mine entrance with cyan route lines / thermal grid overlay"
-                shot="Shot #3 — Mine entrance exterior"
-                aspect="16/10"
-              />
+              <div className="aspect-[16/10] overflow-hidden">
+                <img src="/images/property/photo-105.jpg" alt="Mine and mineral infrastructure" className="h-full w-full object-cover" />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white">The mines become a compute core.</h3>
                 <p className="mt-3 text-sm leading-relaxed text-stone-400">
@@ -121,12 +71,9 @@ export default function Home() {
 
             {/* Card 2: Silica → Glass/Solar */}
             <div className="rounded-sm border border-white/10 bg-white/5 overflow-hidden">
-              <ImageSlot
-                language="awakening"
-                description="Silica face / pale mineral wall with fabrication overlays"
-                shot="Shot #8 — Silica or exposed material close-up"
-                aspect="16/10"
-              />
+              <div className="aspect-[16/10] overflow-hidden">
+                <img src="/images/property/photo-040.jpg" alt="Exposed silica and mineral deposits" className="h-full w-full object-cover" />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white">The silica becomes glass, solar, fabrication, and advanced materials.</h3>
                 <p className="mt-3 text-sm leading-relaxed text-stone-400">
@@ -137,12 +84,9 @@ export default function Home() {
 
             {/* Card 3: Plateau → Testbed */}
             <div className="rounded-sm border border-white/10 bg-white/5 overflow-hidden">
-              <ImageSlot
-                language="awakening"
-                description="Plateau aerial with autonomy route mesh / coordinate marks"
-                shot="Shot #2 — Plateau edge / mist / wide shot"
-                aspect="16/10"
-              />
+              <div className="aspect-[16/10] overflow-hidden">
+                <img src="/images/property/photo-020.jpg" alt="Plateau aerial — city-scale testbed" className="h-full w-full object-cover" />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white">The plateau becomes a city-scale testbed.</h3>
                 <p className="mt-3 text-sm leading-relaxed text-stone-400">
@@ -154,12 +98,9 @@ export default function Home() {
 
             {/* Card 4: City → Living Engine */}
             <div className="rounded-sm border border-white/10 bg-white/5 overflow-hidden">
-              <ImageSlot
-                language="awakening"
-                description="Domain constellation / zone network diagram over land composite"
-                shot="Shot #32 — Dark domain constellation map"
-                aspect="16/10"
-              />
+              <div className="aspect-[16/10] overflow-hidden">
+                <img src="/images/property/photo-130.jpg" alt="Property tracts — the living engine substrate" className="h-full w-full object-cover" />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white">The city becomes a living engine.</h3>
                 <p className="mt-3 text-sm leading-relaxed text-stone-400">
@@ -190,14 +131,8 @@ export default function Home() {
           </p>
 
           {/* Main vision image — the domain constellation / city at temperature */}
-          <div className="mt-12">
-            <ImageSlot
-              language="awakening"
-              description="Immersive city-at-temperature composite: aerial base map + 12 luminous domain nodes + festival activity traces + embedded human scenes (long table, forge, amphitheater, drone flight)"
-              shot="Shot #36 — City-at-temperature composite band"
-              aspect="21/9"
-              className="min-h-[300px]"
-            />
+          <div className="mt-12 aspect-[21/9] min-h-[300px] overflow-hidden rounded-sm">
+            <img src="/images/property/photo-050.jpg" alt="Aerial view — the living city substrate at scale" className="h-full w-full object-cover" />
           </div>
 
           <div className="mt-12 grid gap-12 lg:grid-cols-2">
@@ -230,9 +165,15 @@ export default function Home() {
 
           {/* Festival + pioneering image strip */}
           <div className="mt-12 grid gap-4 sm:grid-cols-3">
-            <ImageSlot language="festival" description="Long communal table at dusk with warm light" shot="Shot #12 — Shared meal, dusk" aspect="4/3" />
-            <ImageSlot language="pioneering" description="Small team around prototype / drone / planning table" shot="Shot #13 — 3-5 people around prototype" aspect="4/3" />
-            <ImageSlot language="festival" description="Amphitheater or ceremony with firelight" shot="Shot #35 — Festival-light image" aspect="4/3" />
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <img src="/images/property/photo-085.jpg" alt="Dusk over the plateau" className="h-full w-full object-cover" />
+            </div>
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <img src="/images/property/photo-065.jpg" alt="Path through the land" className="h-full w-full object-cover" />
+            </div>
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <img src="/images/property/photo-035.jpg" alt="Sunset from the ridge" className="h-full w-full object-cover" />
+            </div>
           </div>
 
           <div className="mt-10">
@@ -275,14 +216,13 @@ export default function Home() {
           </div>
 
           {/* Bond cascade diagram placeholder */}
-          <div className="mt-12">
-            <ImageSlot
-              language="proof"
-              description="Bond cascade diagram: Acquire → Municipalize → Infrastructure → Revalue → Issue again → Unlock next age"
-              shot="Shot #30 — Bond cascade / land value cascade"
-              aspect="3/1"
-              className="min-h-[120px]"
-            />
+          {/* Bond cascade — visual flow */}
+          <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-2 text-center font-mono text-xs text-stone-500">
+            {["Acquire land", "→", "Form district", "→", "Grants + bonds", "→", "Build infrastructure", "→", "Revalue", "→", "Issue again"].map((step, i) => (
+              <span key={i} className={step === "→" ? "text-[#8A5B44] text-lg" : "rounded-sm border border-stone-300 bg-white px-3 py-2 text-stone-900 font-semibold text-[11px]"}>
+                {step}
+              </span>
+            ))}
           </div>
 
           <p className="mt-8 max-w-3xl text-base leading-relaxed text-stone-600">
@@ -306,21 +246,21 @@ export default function Home() {
             </h3>
             <div className="mt-10 grid gap-6 lg:grid-cols-3">
               <div className="flex flex-col rounded-sm border border-stone-300 bg-white p-6">
-                <ImageSlot language="substrate" description="Parcel map / topo lines / district diagram" shot="Shot #22 — Parcel map" aspect="3/2" />
+                <div className="aspect-[3/2] overflow-hidden rounded-sm"><img src="/images/property/photo-090.jpg" alt="Property boundary — parcel map" className="h-full w-full object-cover" /></div>
                 <p className="mt-4 font-mono text-[10px] uppercase tracking-widest text-stone-400">Capital</p>
                 <h4 className="mt-2 text-lg font-bold text-stone-900">Back the first living city.</h4>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-stone-600">A land-backed platform for compute, manufacturing, autonomous infrastructure, and civic software.</p>
                 <div className="mt-4"><Link href="/investors" className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-stone-600">For Investors <span aria-hidden="true">&rarr;</span></Link></div>
               </div>
               <div className="flex flex-col rounded-sm border border-stone-300 bg-white p-6">
-                <ImageSlot language="pioneering" description="Robotics bench / fabrication / materials / workspace" shot="Shot #15 — Operator-scale workspace" aspect="3/2" />
+                <div className="aspect-[3/2] overflow-hidden rounded-sm"><img src="/images/property/photo-040.jpg" alt="Mineral substrate — raw materials" className="h-full w-full object-cover" /></div>
                 <p className="mt-4 font-mono text-[10px] uppercase tracking-widest text-stone-400">Capital + Expertise</p>
                 <h4 className="mt-2 text-lg font-bold text-stone-900">Build the industry that unlocks the city&rsquo;s next age.</h4>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-stone-600">Own a zone. Run a real enterprise. Help give the city a capability it does not yet have.</p>
                 <div className="mt-4"><Link href="/operator" className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-stone-600">Run a Zone <span aria-hidden="true">&rarr;</span></Link></div>
               </div>
               <div className="flex flex-col rounded-sm border border-stone-300 bg-white p-6">
-                <ImageSlot language="pioneering" description="Small intense group around prototype / drone / whiteboard" shot="Shot #13 — Team around prototype" aspect="3/2" />
+                <div className="aspect-[3/2] overflow-hidden rounded-sm"><img src="/images/property/photo-150.jpg" alt="The plateau at dusk — where it begins" className="h-full w-full object-cover" /></div>
                 <p className="mt-4 font-mono text-[10px] uppercase tracking-widest text-stone-400">Frontier Talent</p>
                 <h4 className="mt-2 text-lg font-bold text-stone-900">Join the people founding the city&rsquo;s first age.</h4>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-stone-600">A frontier residency for engineers, researchers, designers, and creators building the first living city.</p>
@@ -336,7 +276,7 @@ export default function Home() {
           Quiet. Dusk image or very faint. Let the line land.
           ═══════════════════════════════════════════════════════════ */}
       <section className="relative overflow-hidden px-6 py-28 sm:py-36">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40" style={{ backgroundImage: "url('/images/dusk/dusk-mountain.jpg')" }} />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/property/photo-095.jpg')" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B0F14]/80 via-[#0B0F14]/70 to-[#0B0F14]/90" />
         <div className="relative z-10 mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
