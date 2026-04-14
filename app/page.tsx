@@ -9,7 +9,7 @@ export default function Home() {
           Image: one full-bleed dawn aerial of the Plateau
           ═══════════════════════════════════════════════════════════ */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/property/photo-030.jpg')" }} />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/selected/04-epic-ridge.png')" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/45 to-black/60" />
 
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
@@ -57,7 +57,7 @@ export default function Home() {
             {/* Card 1: Mine → Compute */}
             <div className="rounded-sm border border-white/10 bg-white/5 overflow-hidden">
               <div className="aspect-[16/10] overflow-hidden">
-                <img src="/images/property/photo-105.jpg" alt="Mine and mineral infrastructure" className="h-full w-full object-cover" />
+                <img src="/images/selected/05-hero-requiem.png" alt="Forerunner compute citadel emerging from the mountain" className="h-full w-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white">The mines become a compute core.</h3>
@@ -72,7 +72,7 @@ export default function Home() {
             {/* Card 2: Silica → Glass/Solar */}
             <div className="rounded-sm border border-white/10 bg-white/5 overflow-hidden">
               <div className="aspect-[16/10] overflow-hidden">
-                <img src="/images/property/photo-040.jpg" alt="Exposed silica and mineral deposits" className="h-full w-full object-cover" />
+                <img src="/images/selected/06-silica-forge.png" alt="Ancient foundry built into the mineral face" className="h-full w-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white">The silica becomes glass, solar, fabrication, and advanced materials.</h3>
@@ -85,7 +85,7 @@ export default function Home() {
             {/* Card 3: Plateau → Testbed */}
             <div className="rounded-sm border border-white/10 bg-white/5 overflow-hidden">
               <div className="aspect-[16/10] overflow-hidden">
-                <img src="/images/property/photo-020.jpg" alt="Plateau aerial — city-scale testbed" className="h-full w-full object-cover" />
+                <img src="/images/selected/07-hero-flash-sentinel.jpeg" alt="City-scale testbed with sentinel deployment" className="h-full w-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white">The plateau becomes a city-scale testbed.</h3>
@@ -99,7 +99,7 @@ export default function Home() {
             {/* Card 4: City → Living Engine */}
             <div className="rounded-sm border border-white/10 bg-white/5 overflow-hidden">
               <div className="aspect-[16/10] overflow-hidden">
-                <img src="/images/property/photo-130.jpg" alt="Property tracts — the living engine substrate" className="h-full w-full object-cover" />
+                <img src="/images/selected/01-valley-deltahalo-flash.jpeg" alt="The living engine — ancient city across the valley" className="h-full w-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white">The city becomes a living engine.</h3>
@@ -132,7 +132,7 @@ export default function Home() {
 
           {/* Main vision image — the domain constellation / city at temperature */}
           <div className="mt-12 aspect-[21/9] min-h-[300px] overflow-hidden rounded-sm">
-            <img src="/images/property/photo-050.jpg" alt="Aerial view — the living city substrate at scale" className="h-full w-full object-cover" />
+            <img src="/images/selected/03-hero-central-spire.png" alt="Central citadel — the living city at full scale" className="h-full w-full object-cover" />
           </div>
 
           <div className="mt-12 grid gap-12 lg:grid-cols-2">
@@ -276,7 +276,7 @@ export default function Home() {
           Quiet. Dusk image or very faint. Let the line land.
           ═══════════════════════════════════════════════════════════ */}
       <section className="relative overflow-hidden px-6 py-28 sm:py-36">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/property/photo-095.jpg')" }} />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/selected/02-beacon-flash.jpeg')" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B0F14]/80 via-[#0B0F14]/70 to-[#0B0F14]/90" />
         <div className="relative z-10 mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
