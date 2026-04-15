@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section } from "@/components/ui/Section";
+import { ImageSlot } from "@/components/ui/ImageSlot";
 
 export const metadata: Metadata = {
   title: "Updates | The Living City",
@@ -24,6 +25,11 @@ export default function UpdatesPage() {
           </p>
         </div>
       </section>
+
+      {/* Timeline hero */}
+      <div className="mx-auto max-w-5xl px-6">
+        <ImageSlot language="substrate" description="Progress timeline — a horizontal strip showing key milestones: Entity formed → LOI signed → Due diligence → Site visits → Phase 1 groundbreak" shot="Shot #55 — Build timeline" aspect="5/1" className="min-h-[80px]" />
+      </div>
 
       {/* Intro */}
       <Section className="bg-white">

@@ -35,6 +35,9 @@ export default function BlueprintPage() {
             to work &mdash; not just financially, but structurally &mdash; this is where
             we explain it.
           </p>
+          <div className="mt-10">
+            <ImageSlot language="proof" description="The Divided Line — Plato's epistemological architecture rendered as a clean geometric diagram: visible/intelligible, images/objects/mathematics/forms" shot="Shot #52 — Divided Line diagram" aspect="16/9" />
+          </div>
         </div>
       </Section>
 
@@ -56,6 +59,14 @@ export default function BlueprintPage() {
         </Section>
       ))}
 
+      <Section className="bg-white">
+        <div className="mx-auto max-w-3xl">
+          <div className="mt-2">
+            <ImageSlot language="proof" description="The Synthesis — visual showing Republic (structure) + Laws (texture) + Philebus (kernel) + Vitruvius (form) + Mondragón (economics) converging into The Living City" shot="Shot #53 — Synthesis diagram" aspect="16/9" />
+          </div>
+        </div>
+      </Section>
+
       <Section className="bg-stone-50">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
@@ -74,6 +85,9 @@ export default function BlueprintPage() {
             <li>Vitruvius, <em>Ten Books on Architecture</em></li>
             <li>José María Arizmendiarrieta, writings on Mondragón</li>
           </ul>
+          <div className="mt-8">
+            <ImageSlot language="proof" description="Source text collage — aged pages from Republic, Elements, Ten Books overlapping, showing the real intellectual substrate" shot="Shot #54 — Source texts" aspect="3/1" className="min-h-[100px]" />
+          </div>
         </div>
       </Section>
 

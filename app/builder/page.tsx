@@ -79,6 +79,12 @@ export default function BuilderPage() {
               </div>
             ))}
           </div>
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <ImageSlot language="pioneering" description="Autonomous systems — drone over terrain, sensor array" shot="Shot #41 — Autonomy track" aspect="1/1" />
+            <ImageSlot language="awakening" description="The Kernel — code on screens, coordination dashboard" shot="Shot #42 — Kernel track" aspect="1/1" />
+            <ImageSlot language="pioneering" description="Manufacturing — CNC, glass furnace, materials lab" shot="Shot #43 — Manufacturing track" aspect="1/1" />
+            <ImageSlot language="festival" description="Architecture — model on table, building rising behind" shot="Shot #44 — Architecture track" aspect="1/1" />
+          </div>
         </div>
       </Section>
 
@@ -117,6 +123,9 @@ export default function BuilderPage() {
             ))}
           </ul>
           <p className="mt-8 text-base font-medium text-stone-900">Phase 1 is not a polished world. It is the group of people who make the world possible.</p>
+          <div className="mt-8">
+            <ImageSlot language="pioneering" description="Phase 1 daily life — shared meal outdoors, small group, real setting, honest and early" shot="Shot #45 — Phase 1 daily life" aspect="16/9" />
+          </div>
         </div>
       </Section>
 

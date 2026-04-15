@@ -40,6 +40,11 @@ export default function InvestorsPage() {
         </div>
       </section>
 
+      {/* Hero visual */}
+      <div className="mx-auto max-w-5xl px-6">
+        <ImageSlot language="substrate" description="The plateau from above — property boundary overlay on aerial, showing scale of the 15,491-acre substrate" shot="Shot #29 — Investor hero aerial" aspect="21/9" className="min-h-[200px]" />
+      </div>
+
       {/* The Spell */}
       <Section className="bg-stone-900 text-white">
         <div className="mx-auto max-w-3xl">
@@ -286,6 +291,9 @@ export default function InvestorsPage() {
             This is not a &ldquo;raise forever&rdquo; model. The capital stack changes
             with the city.
           </p>
+          <div className="mt-8">
+            <ImageSlot language="proof" description="Phase structure timeline — 4 phases left to right: Proof (50) → Validate (500) → Scale (5K) → Full (50K), with capital sources underneath" shot="Shot #31 — Phase timeline diagram" aspect="4/1" className="min-h-[80px]" />
+          </div>
         </div>
       </Section>
 
@@ -315,6 +323,9 @@ export default function InvestorsPage() {
             <p className="font-medium text-stone-900">
               This is not just &ldquo;nice land.&rdquo; It is a jurisdictional edge.
             </p>
+          </div>
+          <div className="mt-8">
+            <ImageSlot language="substrate" description="Tennessee map highlighting Campbell & Scott Counties, with I-75, CSX rail, and distance rings to Knoxville/Nashville/Atlanta" shot="Shot #33 — Tennessee location map" aspect="4/3" />
           </div>
         </div>
       </Section>
@@ -346,6 +357,9 @@ export default function InvestorsPage() {
                 Earth.
               </p>
             </div>
+          </div>
+          <div className="mt-10">
+            <ImageSlot language="awakening" description="Split visual: left side raw land (today), right side the same ridge with Forerunner infrastructure at full scale — the transformation" shot="Shot #34 — Before/after transformation" aspect="2/1" className="min-h-[180px]" />
           </div>
         </div>
       </Section>

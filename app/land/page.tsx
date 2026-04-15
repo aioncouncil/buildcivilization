@@ -134,8 +134,8 @@ export default function LandPage() {
                 {[
                   ["Silica sand", "75–150M tons estimated, 98.52% SiO₂", "In-ground, verified by 3 labs"],
                   ["Coal reserves", "161M tons proven (IRTEC survey)", "In-ground, verified"],
-                  ["Coal mines", "Pre-existing infrastructure at 55°F", "Physical, verified"],
-                  ["Oil and gas wells", "27 active", "Cash-flowing"],
+                  ["Coal mines", "Pre-existing infrastructure at 55°F", "Physical, verified — see below"],
+                  ["Oil and gas wells", "27 active", "Cash-flowing — see below"],
                   ["Hardwood forest", "15,000 acres", "Cash-flowing (ongoing harvest)"],
                   ["Railroad", "CSX main line", "Physical, verified"],
                   ["Water", "Springs + 50+ in/yr rainfall", "Physical, verified"],
@@ -150,6 +150,14 @@ export default function LandPage() {
                 ))}
               </tbody>
             </table>
+          </div>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
+            <ImageSlot language="substrate" description="Mine entrance — the pre-existing underground infrastructure at 55°F year-round, future compute housing" shot="Shot #46 — Mine entrance" aspect="4/3" />
+            <ImageSlot language="substrate" description="Active wellhead — one of 27 producing oil/gas wells on the property" shot="Shot #47 — Wellhead close-up" aspect="4/3" />
+          </div>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            <ImageSlot language="substrate" description="Silica sand close-up — 98.52% SiO₂, the raw material for glass and solar manufacturing" shot="Shot #48 — Silica sample" aspect="4/3" />
+            <ImageSlot language="substrate" description="CSX railroad crossing the property — active rail for logistics and material transport" shot="Shot #49 — Railroad access" aspect="4/3" />
           </div>
         </div>
       </Section>

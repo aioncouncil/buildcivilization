@@ -31,6 +31,10 @@ export default function FounderPage() {
 
           <p>So I started looking for substrate.</p>
 
+          <div className="my-8">
+            <ImageSlot language="substrate" description="The land itself — a wide vista from the ridge, showing the scale and beauty of the plateau, the substrate Mars found" shot="Shot #50 — The substrate" aspect="16/9" />
+          </div>
+
           <p>What we have now is 15,491 acres in Tennessee, real resources, a real financing path, a real entity, a real grant stack, a real municipal-bond pathway, and the beginnings of the first people who can help make the engine real.</p>
 
           <p>What I am building is not a commune, not a resort, not a campus, not a brand. It is the first living city: a city that takes what its people want and continuously tries to turn those wants into technologies, industries, rituals, teams, experiences, and ways of life.</p>

@@ -30,6 +30,9 @@ export default function OperatorPage() {
             <a href="#apply" className="inline-flex items-center justify-center rounded-sm bg-stone-900 px-6 py-3 text-sm font-semibold text-white hover:bg-stone-800">Apply to run a zone</a>
             <a href="mailto:operators@buildcivilization.com?subject=Operator%20Term%20Sheet" className="inline-flex items-center justify-center rounded-sm border border-stone-300 px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-50">Request the term sheet</a>
           </div>
+          <div className="mt-10">
+            <ImageSlot language="pioneering" description="Operator workspace — serious person at a workbench/forge/lab with real tools, real materials, frontier energy" shot="Shot #37 — Operator hero" aspect="16/9" />
+          </div>
         </div>
       </section>
 
@@ -68,6 +71,10 @@ export default function OperatorPage() {
             ))}
           </ul>
           <p className="mt-6 text-sm font-medium text-stone-900">If you can run one of those well, you are not decorating the city. You are changing what becomes possible inside it.</p>
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            <ImageSlot language="pioneering" description="Manufacturing zone — fabrication, CNC, materials processing" shot="Shot #38 — Manufacturing zone" aspect="4/3" />
+            <ImageSlot language="pioneering" description="Food systems zone — greenhouse, fermentation lab, shared kitchen" shot="Shot #39 — Food systems zone" aspect="4/3" />
+          </div>
         </div>
       </Section>
 
@@ -106,6 +113,9 @@ export default function OperatorPage() {
             <li className="flex gap-3"><span className="text-stone-400">&bull;</span><span>The chance to shape how your industry is built into the city from the beginning</span></li>
           </ul>
           <p className="mt-6 text-sm font-medium text-stone-900">You are not arriving to sell into a finished economy. You are arriving to help create one.</p>
+          <div className="mt-8">
+            <ImageSlot language="substrate" description="Site plan sketch — 5 founding zones placed on the land, with shared infrastructure paths connecting them" shot="Shot #40 — Phase 1 zone layout" aspect="16/9" />
+          </div>
         </div>
       </Section>
 

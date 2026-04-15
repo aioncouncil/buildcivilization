@@ -28,6 +28,11 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
+      {/* Hero image — aerial of the coordination in action */}
+      <div className="mx-auto max-w-5xl px-6">
+        <ImageSlot language="awakening" description="Aerial view of the plateau at dawn — mist in valleys, ridges catching first light, the landscape that becomes the city" shot="Shot #25 — Dawn aerial hero" aspect="21/9" className="min-h-[200px]" />
+      </div>
+
       {/* How to read this page */}
       <Section className="bg-stone-50">
         <div className="mx-auto max-w-3xl">
@@ -203,6 +208,9 @@ export default function HowItWorksPage() {
               stewarding a working organ inside a larger organism.
             </p>
           </div>
+          <div className="mt-8">
+            <ImageSlot language="awakening" description="A single zone in context — workshop/forge/lab with visible connections to neighboring zones and shared infrastructure" shot="Shot #26 — Zone in the organism" aspect="16/9" />
+          </div>
         </div>
       </Section>
 
@@ -251,6 +259,9 @@ export default function HowItWorksPage() {
             future goods gets miserable. A life spent mostly on mixed goods is what we
             are aiming at.
           </p>
+          <div className="mt-8">
+            <ImageSlot language="proof" description="Three-column balance diagram: Present Goods | Future Goods | Mixed Goods — with examples under each" shot="Shot #27 — Three goods diagram" aspect="3/1" className="min-h-[100px]" />
+          </div>
         </div>
       </Section>
 

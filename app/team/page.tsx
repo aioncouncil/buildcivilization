@@ -89,6 +89,7 @@ export default function TeamPage() {
           >
             Heath@haydenoutdoors.com
           </a>
+          <div className="mt-6"><ImageSlot language="pioneering" description="Heath Thompson — on the land or with aerial equipment, natural light" shot="Shot #51 — Heath portrait" aspect="1/1" className="max-w-[200px]" /></div>
         </div>
       </Section>
 
