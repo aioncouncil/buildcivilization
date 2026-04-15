@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ImageSlot } from "@/components/ui/ImageSlot";
 
 export const metadata: Metadata = {
   title: "From the Founder | The Living City",
@@ -13,6 +14,7 @@ export default function FounderPage() {
         <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-stone-500">Letter from the Founder</p>
         <h1 className="mt-6 text-4xl font-bold tracking-tight text-stone-900 sm:text-5xl">I am going to tell you the truth about this project.</h1>
         <p className="mt-4 text-sm italic text-stone-500">April 2026</p>
+        <div className="mt-8"><ImageSlot language="pioneering" description="Mars on the land — standing or walking, outdoors, weather visible, 3/4 crop" shot="Shot #20 — Founder environmental portrait" aspect="3/4" className="max-w-sm" /></div>
 
         <div className="mt-12 space-y-6 text-lg leading-[1.75] text-stone-700">
           <p>My name is Mars Argeadai. I am the founder of The Living City.</p>

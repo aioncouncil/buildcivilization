@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Section } from "@/components/ui/Section";
+import { ImageSlot } from "@/components/ui/ImageSlot";
 
 export const metadata: Metadata = {
   title: "The Land | The Living City",
@@ -94,6 +95,7 @@ export default function LandPage() {
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
             Where it is.
           </h2>
+          <div className="mb-10"><ImageSlot language="substrate" description="Property boundary / parcel map overlay on satellite imagery" shot="Shot #22 — Parcel map" aspect="16/9" /></div>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-stone-600">
             Pioneer, Tennessee, on the Cumberland Plateau, spanning Campbell and Scott
             Counties. 90 minutes from Knoxville. 3 hours from Nashville. 3 hours from

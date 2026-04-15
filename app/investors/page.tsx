@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
+import { ImageSlot } from "@/components/ui/ImageSlot";
 
 export const metadata: Metadata = {
   title: "Investors | The Living City",
@@ -166,6 +167,7 @@ export default function InvestorsPage() {
               </p>
             </div>
           </div>
+          <div className="mt-8"><ImageSlot language="proof" description="Bond cascade diagram: Acquire → Municipalize → Infrastructure → Revalue → Repeat" shot="Shot #30" aspect="3/1" className="min-h-[100px]" /></div>
           <p className="mt-10 text-base font-medium text-stone-900">
             Each phase changes what the land is worth because each phase changes what the
             city can do.
@@ -217,6 +219,7 @@ export default function InvestorsPage() {
               </tbody>
             </table>
           </div>
+          <div className="mt-6"><ImageSlot language="proof" description="Per-acre value progression chart: $1,360 → $10K → $60K → $100K+" shot="Custom — value cascade chart" aspect="16/7" className="min-h-[120px]" /></div>
           <p className="mt-6 text-xs leading-relaxed text-stone-500">
             These are design targets modeled on comparable developments, not projections
             of guaranteed returns. Actual land values will depend on execution, market

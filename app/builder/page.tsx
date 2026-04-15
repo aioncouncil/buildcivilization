@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
+import { ImageSlot } from "@/components/ui/ImageSlot";
 import { BuilderForm } from "@/components/forms/BuilderForm";
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function BuilderPage() {
           <div className="mt-10">
             <a href="#apply" className="inline-flex items-center justify-center rounded-sm bg-stone-900 px-6 py-3 text-sm font-semibold text-white hover:bg-stone-800">Apply to the first fifty</a>
           </div>
+          <div className="mt-10"><ImageSlot language="pioneering" description="5-8 serious people around prototype, drone, or planning table — frontier lab energy" shot="Shot #13 — Team around prototype" aspect="16/9" /></div>
         </div>
       </section>
 
@@ -86,6 +88,7 @@ export default function BuilderPage() {
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">What this becomes at full scale.</h2>
           <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-600">
             <p>By the time the city is operating at full scale, the people who helped found its first age will be able to walk through places they helped make possible: districts alive with festivals every day, industries that did not exist when they arrived, calendars that pulse across twelve domains, institutions that train the next generations, software that quietly coordinates the whole organism, and a city that feels less like a settlement and more like a living world.</p>
+            <div className="mt-8"><ImageSlot language="awakening" description="Forerunner districts alive with festivals — the full city at scale" shot="Shot #36 — City at temperature" aspect="16/9" /></div>
             <p className="font-medium text-stone-900">You are not just joining a program. You are arriving early enough to help decide what this thing becomes.</p>
           </div>
         </div>

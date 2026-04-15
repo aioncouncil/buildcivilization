@@ -9,7 +9,7 @@ export default function Home() {
           Image: one full-bleed dawn aerial of the Plateau
           ═══════════════════════════════════════════════════════════ */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/selected/04-epic-ridge.png')" }} />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/selected/round2/hero-dusk-citadel.jpeg')" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/45 to-black/60" />
 
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">

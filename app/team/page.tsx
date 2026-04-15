@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
+import { ImageSlot } from "@/components/ui/ImageSlot";
 
 export const metadata: Metadata = {
   title: "Team | The Living City",
@@ -56,6 +57,7 @@ export default function TeamPage() {
           >
             mars@buildcivilization.com
           </a>
+          <div className="mt-6"><ImageSlot language="pioneering" description="Mars environmental portrait — on the land, natural light" shot="Shot #20 — Founder portrait" aspect="1/1" className="max-w-[200px]" /></div>
         </div>
       </Section>
 

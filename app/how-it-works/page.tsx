@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
+import { ImageSlot } from "@/components/ui/ImageSlot";
 
 export const metadata: Metadata = {
   title: "How It Works | The Living City",
@@ -170,6 +171,11 @@ export default function HowItWorksPage() {
           <p className="mt-10 italic text-stone-600">
             That is the whole mechanism. Everything else is detail.
           </p>
+          <div className="mt-10">
+            <ImageSlot language="proof" description="The coordination loop diagram: wants → shared list → dependency map → missions → teams → festivals → new capability" shot="Shot #28 — Loop diagram" aspect="16/9" />
+          </div>
+          <p className="mt-6 italic text-stone-600">
+          </p>
         </div>
       </Section>
 
@@ -330,6 +336,11 @@ export default function HowItWorksPage() {
             People who arrive in Phase 1 are not arriving <em>at</em> the vision &mdash;
             they are the ones who make the vision possible.
           </p>
+          <div className="mt-8">
+            <ImageSlot language="pioneering" description="Small team working together on the land — honest, early, real" shot="Shot #13 — Team around prototype" aspect="16/9" />
+          </div>
+          <p className="hidden">
+          </p>
         </div>
       </Section>
 
@@ -363,6 +374,11 @@ export default function HowItWorksPage() {
             deeply. Not &ldquo;you will get whatever you want&rdquo; &mdash; but &ldquo;the
             machinery of ordinary life will no longer eat your time, and the things you
             actually care about will become the default shape of your day.&rdquo;
+          </p>
+          <div className="mt-10">
+            <ImageSlot language="awakening" description="Domain constellation — 12 luminous nodes across the landscape showing the city at full temperature" shot="Shot #32 — Domain constellation map" aspect="21/9" className="min-h-[200px]" />
+          </div>
+          <p className="hidden">
           </p>
         </div>
       </Section>

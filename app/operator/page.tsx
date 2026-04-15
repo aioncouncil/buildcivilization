@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
+import { ImageSlot } from "@/components/ui/ImageSlot";
 import { OperatorForm } from "@/components/forms/OperatorForm";
 
 export const metadata: Metadata = {
@@ -113,6 +114,7 @@ export default function OperatorPage() {
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">What the role becomes at scale.</h2>
           <p className="mt-6 text-base leading-relaxed text-stone-300">At full scale, operators are not just running profitable enterprises. They are stewarding whole domains of civilization. A single zone can become a supplier to hundreds of other zones, the anchor of a domain festival, the apprenticeship path for an entire craft, the place where new technologies get tested first, and the institution that changes what thousands of people can do.</p>
+          <div className="mt-8"><ImageSlot language="festival" description="Domain festival — warm light, communal celebration inside Forerunner architecture" shot="Shot #35 — Festival-light image" aspect="16/9" /></div>
           <p className="mt-4 text-base font-medium text-white">This is why the best operators will want to be early. The first people to build a domain become part of the city&rsquo;s permanent memory.</p>
         </div>
       </Section>
