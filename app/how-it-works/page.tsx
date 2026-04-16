@@ -362,34 +362,47 @@ export default function HowItWorksPage() {
             Category 3 &middot; Full-scale vision
           </p>
           <h2 className="mt-3 text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            What the full city becomes.
+            What happens when the living city reaches full temperature.
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-stone-600">
-            At full scale the same loop runs across roughly 50,000 people and 5,040
-            zones. Plato&rsquo;s <em>Laws</em> specifies that exact number of households
-            for a city that holds together. We are taking him literally.
-          </p>
-          <p className="mt-4 text-base leading-relaxed text-stone-600">
-            At that scale the shared list is continuous, the dependency map connects
-            every art to every other art, missions run every day across every domain,
-            contests happen constantly, and festivals honor each of the twelve domains of
-            life in a calendar that runs year-round. Most importantly, the secondary
-            arts &mdash; the taxes, the bureaucracy, the logistics, the administrative
-            drag, the domestic friction &mdash; have been progressively automated away.
-            Each phase of the city&rsquo;s growth is meant to take more of the secondary
-            arts off its residents&rsquo; plates and hand more of their hours back to
-            the things that actually make a life worth living.
-          </p>
-          <p className="mt-6 text-base leading-relaxed text-stone-900 font-medium">
-            At full scale, the city&rsquo;s residents get to practice fewer arts, more
-            deeply. Not &ldquo;you will get whatever you want&rdquo; &mdash; but &ldquo;the
-            machinery of ordinary life will no longer eat your time, and the things you
-            actually care about will become the default shape of your day.&rdquo;
-          </p>
+          <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-600">
+            <p>
+              Fifty thousand people. 5,040 zones. Twelve domains of life running on a
+              year-round calendar. Hundreds of contests and festivals across the city,
+              every day, in every season. A living core that is continuously learning
+              what its citizens care about, which technologies would unlock the next
+              layer of possibility, which enterprises need to exist, which teams should
+              meet, which places should come alive tonight, and which experiences would
+              deepen friendship, strength, wisdom, beauty, health, courage, and wealth.
+            </p>
+            <p>
+              At that scale, the city starts to feel less like real estate and more
+              like a <strong className="text-stone-900">civilization with a nervous system</strong>.
+            </p>
+            <p>
+              The recommendation engines that currently optimize your feed get
+              repurposed to optimize your world. The dependency trees that currently
+              live inside software projects get expanded to cover factories, schools,
+              kitchens, transit, rituals, performances, prototypes, and entire domains
+              of life. The machinery of ordinary existence &mdash; logistics, admin,
+              matching, scheduling, coordination, domestic drag &mdash; gets
+              progressively automated away. What fills the hours instead are mixed
+              goods: the kinds of work, relationships, and experiences that are good
+              now and make the future better at the same time.
+            </p>
+          </div>
           <div className="mt-10">
             <ImageSlot language="awakening" description="Domain constellation — 12 luminous nodes across the landscape showing the city at full temperature" shot="Shot #32 — Domain constellation map" aspect="21/9" className="min-h-[200px]" />
           </div>
-          <p className="hidden">
+          <p className="mt-10 text-lg leading-relaxed text-stone-900 font-medium">
+            This is the part that is hard to imagine until you see the shape of it:
+            a city that is constantly redesigning its locations, calendars, teams, and
+            resource flows so that the best day of your life stops feeling rare and
+            starts feeling structural.
+          </p>
+          <p className="mt-6 text-base leading-relaxed text-stone-600">
+            Not &ldquo;you will get whatever you want&rdquo; &mdash; but &ldquo;the
+            machinery of ordinary life will no longer eat your time, and the things you
+            actually care about will become the default shape of your day.&rdquo;
           </p>
         </div>
       </Section>
