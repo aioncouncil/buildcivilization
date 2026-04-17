@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 export default function InvestorsPage() {
   return (
     <>
-      {/* Hero */}
+      {/* ─── 1. HERO ─── */}
       <section className="px-6 pb-12 pt-20 sm:pb-16 sm:pt-28">
         <div className="mx-auto max-w-3xl">
           <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-stone-500">
-            Investors &middot; Private Memo
+            Investors
           </p>
           <h1 className="mt-6 text-4xl font-bold tracking-tight text-stone-900 sm:text-5xl">
             Back the first city-scale technology platform.
@@ -27,25 +27,39 @@ export default function InvestorsPage() {
             operator capital, and real assets.
           </p>
           <div className="mt-10 flex flex-col items-stretch gap-3 sm:flex-row">
-            <a href="mailto:investors@buildcivilization.com?subject=Investor%20Memo%20Request" className="inline-flex items-center justify-center rounded-sm bg-stone-900 px-6 py-3 text-sm font-semibold text-white hover:bg-stone-800">
-              Request the investor memo
-            </a>
-            <a href="mailto:investors@buildcivilization.com?subject=20-minute%20call" className="inline-flex items-center justify-center rounded-sm border border-stone-300 px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-50">
-              Book a 20-minute call
+            {/* [COUNSEL] — CTA language and accreditation flow must be reviewed by securities counsel */}
+            <Link
+              href="/investors/verify"
+              className="inline-flex items-center justify-center rounded-sm bg-stone-900 px-6 py-3 text-sm font-semibold text-white hover:bg-stone-800"
+            >
+              Verify accredited status
+            </Link>
+            <a
+              href="mailto:investors@buildcivilization.com?subject=20-minute%20call"
+              className="inline-flex items-center justify-center rounded-sm border border-stone-300 px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-50"
+            >
+              Book a 20-min call
             </a>
           </div>
           <p className="mt-4 text-sm italic text-stone-500">
-            Accredited investors only. Verification required before data room access.
+            {/* [COUNSEL] — verify this disclaimer language */}
+            Verified accredited investors only. All materials gated behind qualification.
           </p>
         </div>
       </section>
 
       {/* Hero visual */}
       <div className="mx-auto max-w-5xl px-6">
-        <ImageSlot language="substrate" description="The plateau from above — property boundary overlay on aerial, showing scale of the 15,491-acre substrate" shot="Shot #29 — Investor hero aerial" aspect="21/9" className="min-h-[200px]" />
+        <ImageSlot
+          language="substrate"
+          description="The plateau from above — property boundary overlay on aerial, showing scale of the 15,491-acre substrate"
+          shot="Shot #29 — Investor hero aerial"
+          aspect="21/9"
+          className="min-h-[200px]"
+        />
       </div>
 
-      {/* The Spell */}
+      {/* ─── 2. THE OPPORTUNITY ─── */}
       <Section className="bg-stone-900 text-white">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -63,7 +77,7 @@ export default function InvestorsPage() {
               The zone model makes it productive.<br />
               The kernel makes it alive.
             </p>
-            <p className="text-white font-medium">
+            <p className="font-medium text-white">
               This is the investor bet: the first living city built not as a vanity
               development, but as a city-scale operating company with a real-asset floor
               and a civilization-scale upside.
@@ -72,72 +86,106 @@ export default function InvestorsPage() {
         </div>
       </Section>
 
-      {/* The Translation */}
+      {/* ─── 3. THE OFFERING ─── */}
+      {/* [COUNSEL] — entire offering section requires securities counsel review before publication */}
       <Section className="bg-white">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            What that means in plain English.
+            The offering.
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-stone-600">
-            Acquire resource-rich land in a federally subsidized Appalachian county at a
-            significant discount to appraised value. Form a Tennessee utility district in
-            30&ndash;90 days. Issue tax-exempt bonds. Use federal grants to cover a
-            majority of infrastructure. Revalue the land as municipal status and
-            infrastructure come online. Issue the next layer of bonds against the new
-            value. Onboard operators who bring capital and specialized industries. Repeat
-            until the city becomes a fully operating machine.
-          </p>
           <p className="mt-4 text-base leading-relaxed text-stone-600">
-            The model is simple to say and hard to execute. That is exactly why it is
-            interesting.
+            Current public terms for the equity round.
+          </p>
+          <div className="mt-8 overflow-hidden rounded-sm border border-stone-200 bg-white">
+            <table className="w-full text-left text-sm">
+              <tbody className="divide-y divide-stone-200 text-stone-600">
+                <tr>
+                  <td className="px-4 py-3 font-medium text-stone-900">Issuer</td>
+                  <td className="px-4 py-3">Build Civilization Trading Company, Inc.</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 font-medium text-stone-900">Security</td>
+                  {/* [COUNSEL] — confirm security type and class designation */}
+                  <td className="px-4 py-3">Class B common shares</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 font-medium text-stone-900">Reference price</td>
+                  {/* [COUNSEL] — confirm price per share */}
+                  <td className="px-4 py-3">$0.50 / share</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 font-medium text-stone-900">Minimum investment</td>
+                  {/* [COUNSEL] — confirm minimum */}
+                  <td className="px-4 py-3">$250,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* [COUNSEL] — confirm reference math and scenario language */}
+          <div className="mt-8 rounded-sm border border-stone-200 bg-stone-50 p-6">
+            <p className="text-sm font-semibold text-stone-900">Reference math</p>
+            <p className="mt-2 text-sm leading-relaxed text-stone-600">
+              $250K at $0.50/share = 500,000 shares.
+            </p>
+            <p className="mt-1 text-sm leading-relaxed text-stone-600">
+              Target scenario: $5B+ mature valuation &asymp; ~$25M position.
+            </p>
+          </div>
+
+          <p className="mt-6 text-xs leading-relaxed text-stone-500">
+            {/* [COUNSEL] — risk disclaimer language */}
+            This is a speculative, illiquid investment in an early-stage company. There is
+            no guarantee of any return. You may lose your entire investment. Forward-looking
+            statements and target scenarios are not projections or promises. Offered only to
+            verified accredited investors under applicable federal securities exemptions.
           </p>
         </div>
       </Section>
 
-      {/* The Proof */}
+      {/* ─── 4. THE ASSET FLOOR ─── */}
       <Section className="bg-stone-50">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            The numbers that matter.
+            The asset floor.
           </h2>
-          <div className="mt-8 space-y-4">
+          <p className="mt-4 text-base leading-relaxed text-stone-600">
+            If nothing else works, you still own this.
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {[
-              ["15,491 acres", "on the Cumberland Plateau, Campbell & Scott Counties"],
-              ["$25M acquisition", "at $1,360/acre — 72% of the 2014 bank-appraised value"],
-              ["$250M+", "in estimated geological resources (coal, silica, gas, timber)"],
-              ["161M tons", "proven coal reserves (IRTEC geological survey)"],
-              ["75–150M tons", "high-purity silica at 98.52% SiO₂ (verified by three independent labs)"],
-              ["27 producing wells", "with capacity for 450+ wells on the property"],
-              ["Cash-flow positive", "existing operations cover all carrying costs from day one"],
-              ["50–80%", "projected federal grant coverage for Phase 1 infrastructure"],
-              ["30–90 days", "to form a bond-issuing Tennessee utility district ($10–25K)"],
-            ].map(([stat, desc]) => (
-              <div key={stat} className="flex gap-4 items-baseline">
-                <span className="shrink-0 text-xl font-bold text-stone-900 sm:text-2xl w-40 text-right">
-                  {stat}
-                </span>
-                <span className="text-base text-stone-600">{desc}</span>
+              ["Mountain land", "15,491 acres on the Cumberland Plateau, acquired at ~$1,360/acre"],
+              ["Producing wells", "27 active wells with capacity for 450+"],
+              ["Railroad", "Active CSX rail running through the property"],
+              ["Silica", "75–150M tons high-purity SiO\u2082 (98.52%, verified by three labs)"],
+              ["Hardwood", "15,000+ acres of standing Appalachian hardwood"],
+              ["Mines", "Pre-existing mine infrastructure with year-round 55\u00B0F cooling"],
+              ["Water", "50+ inches annual rainfall, mountain spring and aquifer access"],
+              ["Grants & bonds", "Distressed-county eligibility for federal grants and tax-exempt bonds"],
+            ].map(([title, desc]) => (
+              <div key={title} className="rounded-sm border border-stone-200 bg-white p-5">
+                <p className="text-sm font-bold text-stone-900">{title}</p>
+                <p className="mt-1 text-sm leading-relaxed text-stone-600">{desc}</p>
               </div>
             ))}
           </div>
-          <p className="mt-8 text-xs leading-relaxed text-stone-500">
-            Resource values represent estimated gross in-ground value at current market
-            prices, not net recoverable revenue. Appraisal references the 2014 Woodford
-            Bank MAI-certified market valuation ($34.76M). All reserve estimates sourced
-            from independent geological surveys. See the{" "}
-            <Link href="/land" className="underline hover:text-stone-700">
-              Land page
-            </Link>{" "}
-            for full methodology and category disclosures.
-          </p>
+          <div className="mt-8">
+            <ImageSlot
+              language="substrate"
+              description="Asset floor grid — aerial overlays of each asset category on the property map"
+              shot="Shot #30 — Asset floor composite"
+              aspect="16/9"
+              className="min-h-[160px]"
+            />
+          </div>
         </div>
       </Section>
 
-      {/* The Bond Cascade */}
+      {/* ─── 5. THE CAPITAL MACHINE ─── */}
       <Section className="bg-white">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            The bond cascade.
+            The capital machine.
           </h2>
           <p className="mt-4 text-sm font-medium text-stone-500">
             Raw land &rarr; municipal entity &rarr; infrastructure &rarr; operating city
@@ -172,7 +220,15 @@ export default function InvestorsPage() {
               </p>
             </div>
           </div>
-          <div className="mt-8"><ImageSlot language="proof" description="Bond cascade diagram: Acquire → Municipalize → Infrastructure → Revalue → Repeat" shot="Shot #30" aspect="3/1" className="min-h-[100px]" /></div>
+          <div className="mt-8">
+            <ImageSlot
+              language="proof"
+              description="Bond cascade diagram: Acquire → Municipalize → Infrastructure → Revalue → Repeat"
+              shot="Shot #31"
+              aspect="3/1"
+              className="min-h-[100px]"
+            />
+          </div>
           <p className="mt-10 text-base font-medium text-stone-900">
             Each phase changes what the land is worth because each phase changes what the
             city can do.
@@ -180,90 +236,89 @@ export default function InvestorsPage() {
         </div>
       </Section>
 
-      {/* Land Value Cascade */}
+      {/* ─── 6. WHY HERE ─── */}
       <Section className="bg-stone-50">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            The per-acre trajectory.
+            Why Tennessee.
           </h2>
-          <p className="mt-6 text-base leading-relaxed text-stone-600">
-            The business plan models a per-acre value progression as the land transitions
-            from raw acreage to an operating city. These are design targets based on
-            comparable municipal developments, not guarantees.
+          <p className="mt-4 text-base font-medium text-stone-900">
+            Fastest path to a bond-issuing entity in America.
           </p>
-          <div className="mt-8 overflow-hidden rounded-sm border border-stone-200 bg-white">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-stone-100 text-stone-900">
-                <tr>
-                  <th className="px-4 py-3 font-semibold">Stage</th>
-                  <th className="px-4 py-3 font-semibold text-right">Target $/acre</th>
-                  <th className="px-4 py-3 font-semibold">Comparable</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-stone-200 text-stone-600">
-                <tr>
-                  <td className="px-4 py-3 font-medium text-stone-900">Raw acquisition</td>
-                  <td className="px-4 py-3 text-right">~$1,360</td>
-                  <td className="px-4 py-3">Current LOI price</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3 font-medium text-stone-900">Platted + utility district</td>
-                  <td className="px-4 py-3 text-right">$10,000–25,000</td>
-                  <td className="px-4 py-3">Comparable TN utility districts</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3 font-medium text-stone-900">Infrastructured</td>
-                  <td className="px-4 py-3 text-right">$20,000–60,000</td>
-                  <td className="px-4 py-3">Developed rural communities</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-3 font-medium text-stone-900">Operating community</td>
-                  <td className="px-4 py-3 text-right">$60,000–100,000+</td>
-                  <td className="px-4 py-3">The Villages per-unit economics</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="mt-6 space-y-3 text-base leading-relaxed text-stone-600">
+            <p>
+              Tennessee utility districts can be formed in roughly 30&ndash;90 days at
+              $10&ndash;25K and issue tax-exempt bonds. Comparable pathways in Texas take
+              18&ndash;24 months and cost $2.5&ndash;5.5M.
+            </p>
+            <ul className="space-y-2 pl-4">
+              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>Fast utility-district formation (30–90 days)</li>
+              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>Tax-exempt municipal bond issuance</li>
+              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>No state income tax</li>
+              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>Federal grant stacks (distressed county + coal-country priority)</li>
+              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>Mountain water security (50+ inches rainfall/year)</li>
+              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>Active CSX rail through the property</li>
+              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>3+ miles of I-75 frontage</li>
+            </ul>
+            <p className="font-medium text-stone-900">
+              This is not just &ldquo;nice land.&rdquo; It is a jurisdictional edge.
+            </p>
           </div>
-          <div className="mt-6"><ImageSlot language="proof" description="Per-acre value progression chart: $1,360 → $10K → $60K → $100K+" shot="Custom — value cascade chart" aspect="16/7" className="min-h-[120px]" /></div>
-          <p className="mt-6 text-xs leading-relaxed text-stone-500">
-            These are design targets modeled on comparable developments, not projections
-            of guaranteed returns. Actual land values will depend on execution, market
-            conditions, and regulatory approvals. The first five zones in Phase 1 will
-            prove or disprove the unit economics.
-          </p>
+          <div className="mt-8">
+            <ImageSlot
+              language="substrate"
+              description="Tennessee map highlighting Campbell & Scott Counties, with I-75, CSX rail, and distance rings to Knoxville/Nashville/Atlanta"
+              shot="Shot #33 — Tennessee location map"
+              aspect="4/3"
+            />
+          </div>
         </div>
       </Section>
 
-      {/* Revenue Stack */}
+      {/* ─── 7. THE ASYMMETRY ─── */}
       <Section className="bg-white">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            Six ways the operating city generates revenue.
+            The downside is dirt. The upside is a civilization.
           </h2>
-          <div className="mt-10 space-y-6">
-            {[
-              ["AI compute", "Data infrastructure housed inside pre-existing mines with natural cooling at 55°F year-round."],
-              ["Manufacturing", "Zone-based cooperative production using on-site material advantages (silica, timber, clay, metals) and specialized labor."],
-              ["Free-zone / tenant revenue", "External companies locating inside the city's economic stack, attracted by stacked tax incentives."],
-              ["Agriculture and food systems", "Internal provisioning plus higher-margin external outputs from 15,000+ acres."],
-              ["Civic software / platform licensing", "The coordination layer, planning tools, and municipal operating stack — licensed to other municipalities and developers."],
-              ["Tourism / education / cultural revenue", "People will come to study, visit, and experience the city once it is alive."],
-            ].map(([title, desc]) => (
-              <div key={title}>
-                <h3 className="text-lg font-bold text-stone-900">{title}</h3>
-                <p className="mt-1 text-sm leading-relaxed text-stone-600">{desc}</p>
-              </div>
-            ))}
-          </div>
-          <p className="mt-8 text-sm italic text-stone-500">
-            Our design target is 5,040 zones each operating at a minimum annual threshold
-            of $500,000 in economic activity. Detailed assumptions and projections live in
-            the investor memo and data room.
+          <p className="mt-4 text-base leading-relaxed text-stone-600">
+            Real-asset floor + civilization-scale upside. That is the asymmetry.
           </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            <div className="rounded-sm border border-stone-200 bg-stone-50 p-6">
+              <p className="font-bold text-stone-900">Downside</p>
+              <p className="mt-3 text-sm leading-relaxed text-stone-600">
+                If the city never scales past Phase 1, the asset layer still controls
+                mountain land bought at a 28% discount to appraised value, with active
+                wells, silica deposits, hardwood, mine infrastructure, rail access, and
+                water. The property is cash-flow positive from day one. You own the
+                dirt.
+              </p>
+            </div>
+            <div className="rounded-sm border border-stone-200 bg-stone-50 p-6">
+              <p className="font-bold text-stone-900">Upside</p>
+              <p className="mt-3 text-sm leading-relaxed text-stone-600">
+                If the city succeeds, the equity layer owns one of the first real
+                city-scale systems for compute, manufacturing, infrastructure, and
+                living coordination &mdash; on substrate that software-first projects
+                cannot replicate, with a licensing model that exports to every city on
+                Earth.
+              </p>
+            </div>
+          </div>
+          <div className="mt-10">
+            <ImageSlot
+              language="awakening"
+              description="Split visual: left side raw land (today), right side the same ridge with infrastructure at full scale"
+              shot="Shot #34 — Before/after transformation"
+              aspect="2/1"
+              className="min-h-[180px]"
+            />
+          </div>
         </div>
       </Section>
 
-      {/* Phase Structure */}
+      {/* ─── 8. PHASES ─── */}
       <Section className="bg-stone-50">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
@@ -280,10 +335,30 @@ export default function InvestorsPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-stone-200 text-stone-600">
-                <tr><td className="px-4 py-3 font-medium text-stone-900">1 — Proof</td><td className="px-4 py-3 text-right">50</td><td className="px-4 py-3 text-right">5</td><td className="px-4 py-3">Seed + grants + first operators</td></tr>
-                <tr><td className="px-4 py-3 font-medium text-stone-900">2 — Validate</td><td className="px-4 py-3 text-right">500</td><td className="px-4 py-3 text-right">50</td><td className="px-4 py-3">Bonds + grants + operators</td></tr>
-                <tr><td className="px-4 py-3 font-medium text-stone-900">3 — Scale</td><td className="px-4 py-3 text-right">5,000</td><td className="px-4 py-3 text-right">500</td><td className="px-4 py-3">Bonds + operators + cash flow</td></tr>
-                <tr><td className="px-4 py-3 font-medium text-stone-900">4 — Full</td><td className="px-4 py-3 text-right">50,000</td><td className="px-4 py-3 text-right">5,040</td><td className="px-4 py-3">Operating cash flow</td></tr>
+                <tr>
+                  <td className="px-4 py-3 font-medium text-stone-900">1 — Proof</td>
+                  <td className="px-4 py-3 text-right">50</td>
+                  <td className="px-4 py-3 text-right">5</td>
+                  <td className="px-4 py-3">Seed + grants + first operators</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 font-medium text-stone-900">2 — Validate</td>
+                  <td className="px-4 py-3 text-right">500</td>
+                  <td className="px-4 py-3 text-right">50</td>
+                  <td className="px-4 py-3">Bonds + grants + operators</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 font-medium text-stone-900">3 — Scale</td>
+                  <td className="px-4 py-3 text-right">5,000</td>
+                  <td className="px-4 py-3 text-right">500</td>
+                  <td className="px-4 py-3">Bonds + operators + cash flow</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 font-medium text-stone-900">4 — Full</td>
+                  <td className="px-4 py-3 text-right">50,000</td>
+                  <td className="px-4 py-3 text-right">5,040</td>
+                  <td className="px-4 py-3">Operating cash flow</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -292,100 +367,100 @@ export default function InvestorsPage() {
             with the city.
           </p>
           <div className="mt-8">
-            <ImageSlot language="proof" description="Phase structure timeline — 4 phases left to right: Proof (50) → Validate (500) → Scale (5K) → Full (50K), with capital sources underneath" shot="Shot #31 — Phase timeline diagram" aspect="4/1" className="min-h-[80px]" />
+            <ImageSlot
+              language="proof"
+              description="Phase structure timeline — 4 phases left to right: Proof (50) → Validate (500) → Scale (5K) → Full (50K)"
+              shot="Shot #35 — Phase timeline diagram"
+              aspect="4/1"
+              className="min-h-[80px]"
+            />
           </div>
         </div>
       </Section>
 
-      {/* Why Tennessee */}
+      {/* ─── 9. WHY NOW ─── */}
       <Section className="bg-white">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            Why Tennessee.
+            Why now.
           </h2>
-          <p className="mt-4 text-base font-medium text-stone-900">
-            Fastest path to a bond-issuing entity in America.
+          <p className="mt-4 text-base leading-relaxed text-stone-600">
+            Three things converged.
           </p>
-          <div className="mt-6 space-y-3 text-base leading-relaxed text-stone-600">
-            <p>
-              Tennessee utility districts can be formed in roughly 30&ndash;90 days at
-              $10&ndash;25K and issue tax-exempt bonds. Comparable pathways in Texas take
-              18&ndash;24 months and cost $2.5&ndash;5.5M.
-            </p>
-            <ul className="space-y-2 pl-4">
-              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>No state income tax</li>
-              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>Mountain water security (50+ inches rainfall/year)</li>
-              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>Active CSX rail through the property</li>
-              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>Distressed-county federal grant eligibility</li>
-              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>Coal-country federal investment priority</li>
-              <li className="flex gap-2"><span className="text-stone-400">&bull;</span>3+ miles of I-75 frontage</li>
-            </ul>
-            <p className="font-medium text-stone-900">
-              This is not just &ldquo;nice land.&rdquo; It is a jurisdictional edge.
-            </p>
-          </div>
-          <div className="mt-8">
-            <ImageSlot language="substrate" description="Tennessee map highlighting Campbell & Scott Counties, with I-75, CSX rail, and distance rings to Knoxville/Nashville/Atlanta" shot="Shot #33 — Tennessee location map" aspect="4/3" />
+          <div className="mt-8 space-y-6">
+            <div>
+              <h3 className="text-lg font-bold text-stone-900">
+                1. The land became available
+              </h3>
+              <p className="mt-2 text-base leading-relaxed text-stone-600">
+                15,491 acres of resource-rich Appalachian substrate, priced at a 28%
+                discount to appraised value, with active rail, wells, silica, and mine
+                infrastructure. This specific parcel does not come around twice.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-stone-900">
+                2. The federal funding window is open
+              </h3>
+              <p className="mt-2 text-base leading-relaxed text-stone-600">
+                Distressed-county grants, coal-community transition funds, Opportunity
+                Zone incentives, and infrastructure programs are all stacked and active
+                right now. These windows close.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-stone-900">
+                3. The technology is ready
+              </h3>
+              <p className="mt-2 text-base leading-relaxed text-stone-600">
+                AI coordination, autonomous infrastructure, modular construction, and
+                civic software have all crossed the threshold where a city-scale
+                operating system is buildable &mdash; not in ten years, but now.
+              </p>
+            </div>
           </div>
         </div>
       </Section>
 
-      {/* Downside / Upside */}
-      <Section className="bg-stone-50">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-            The downside is dirt. The upside is a civilization.
-          </h2>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            <div className="rounded-sm border border-stone-200 bg-white p-6">
-              <p className="font-bold text-stone-900">Downside</p>
-              <p className="mt-3 text-sm leading-relaxed text-stone-600">
-                If the city never scales past Phase 1, the asset layer still controls
-                mountain land bought at a 28% discount to appraised value, with active
-                wells, silica deposits, hardwood, mine infrastructure, rail access, and
-                water. The property is cash-flow positive from day one. You own the
-                dirt.
-              </p>
-            </div>
-            <div className="rounded-sm border border-stone-200 bg-white p-6">
-              <p className="font-bold text-stone-900">Upside</p>
-              <p className="mt-3 text-sm leading-relaxed text-stone-600">
-                If the city succeeds, the equity layer owns one of the first real
-                city-scale systems for compute, manufacturing, infrastructure, and
-                living coordination &mdash; on substrate that software-first projects
-                cannot replicate, with a licensing model that exports to every city on
-                Earth.
-              </p>
-            </div>
-          </div>
-          <div className="mt-10">
-            <ImageSlot language="awakening" description="Split visual: left side raw land (today), right side the same ridge with Forerunner infrastructure at full scale — the transformation" shot="Shot #34 — Before/after transformation" aspect="2/1" className="min-h-[180px]" />
-          </div>
-        </div>
-      </Section>
-
-      {/* The Ask */}
+      {/* ─── 10. NEXT STEP ─── */}
       <Section className="bg-stone-900 text-white">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            The next move is the memo.
+            Next step.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-stone-300">
-            We want investors who understand hard-asset downside, long-horizon execution,
-            municipal finance, operator-driven buildout, and frontier technical ambition.
+            Verify your accredited status. Receive the investor memo. Schedule a call.
+            Access deeper materials in the data room.
           </p>
           <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row">
-            <a href="mailto:investors@buildcivilization.com?subject=Investor%20Memo%20Request" className="inline-flex items-center justify-center rounded-sm bg-white px-7 py-3.5 text-sm font-semibold text-stone-900 hover:bg-stone-100">
-              Request the investor memo
-            </a>
-            <a href="mailto:investors@buildcivilization.com?subject=20-minute%20call" className="inline-flex items-center justify-center rounded-sm border border-white/40 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10">
-              Book a 20-minute call
+            {/* [COUNSEL] — CTA language review */}
+            <Link
+              href="/investors/verify"
+              className="inline-flex items-center justify-center rounded-sm bg-white px-7 py-3.5 text-sm font-semibold text-stone-900 hover:bg-stone-100"
+            >
+              Verify accredited status
+            </Link>
+            <a
+              href="mailto:investors@buildcivilization.com?subject=20-minute%20call"
+              className="inline-flex items-center justify-center rounded-sm border border-white/40 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10"
+            >
+              Book a 20-min call
             </a>
           </div>
+          <p className="mt-4 text-sm text-stone-400">
+            Or email{" "}
+            <a
+              href="mailto:investors@buildcivilization.com"
+              className="underline hover:text-white"
+            >
+              investors@buildcivilization.com
+            </a>
+          </p>
           <p className="mt-8 text-xs text-stone-500">
-            The issuing entity is General Temple Inc. (Delaware C-Corporation).
-            Investment opportunities are offered only to verified accredited investors
-            under applicable federal securities law.
+            {/* [COUNSEL] — issuing entity and legal disclaimer */}
+            The issuing entity is Build Civilization Trading Company, Inc. (Delaware
+            C-Corporation). Investment opportunities are offered only to verified
+            accredited investors under applicable federal securities law.
           </p>
         </div>
       </Section>

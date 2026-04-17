@@ -6,7 +6,7 @@ import { ImageSlot } from "@/components/ui/ImageSlot";
 export const metadata: Metadata = {
   title: "Blueprint | The Living City",
   description:
-    "The philosophical foundation of The Living City — Plato, Vitruvius, Mondragón, and the sources that built the specification.",
+    "The philosophical foundation of The Living City — Plato, Vitruvius, Mondrag\u00f3n, and the sources that built the specification.",
 };
 
 export default function BlueprintPage() {
@@ -21,76 +21,351 @@ export default function BlueprintPage() {
             The city has a soul.
           </h1>
           <p className="mt-6 text-lg italic text-stone-600">
-            This is the part of the site where, if you want, you can go all the way down.
+            This is the part of the site where, if you want, you can go all the
+            way down.
           </p>
         </div>
       </section>
 
+      {/* Why this page exists */}
       <Section className="bg-white">
         <div className="mx-auto max-w-3xl">
-          <p className="text-base leading-relaxed text-stone-600">
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
+            Why this page exists.
+          </h2>
+          <p className="mt-6 text-base leading-relaxed text-stone-600">
             Most of buildcivilization.com is about the land, the offer, and the
-            application. That is on purpose. You do not need to understand what is on
-            this page to join us. But if you want to know why we believe this is going
-            to work &mdash; not just financially, but structurally &mdash; this is where
-            we explain it.
+            application. That is on purpose. You do not need to understand what
+            is on this page to join us.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-stone-600">
+            But if you want to know why we believe this is going to work &mdash;
+            not just financially, but structurally, at the level of how a city
+            actually produces good lives &mdash; this is where we explain it.
+            Five sources. One synthesis.
           </p>
           <div className="mt-10">
-            <ImageSlot language="proof" description="The Divided Line — Plato's epistemological architecture rendered as a clean geometric diagram: visible/intelligible, images/objects/mathematics/forms" shot="Shot #52 — Divided Line diagram" aspect="16/9" />
+            <ImageSlot
+              language="proof"
+              description="The Divided Line — Plato's epistemological architecture rendered as a clean geometric diagram: visible/intelligible, images/objects/mathematics/forms"
+              shot="Shot #52 — Divided Line diagram"
+              aspect="16/9"
+            />
           </div>
         </div>
       </Section>
 
-      {SECTIONS.map((sec, i) => (
-        <Section
-          key={sec.heading}
-          className={i % 2 === 0 ? "bg-stone-50" : "bg-white"}
-        >
-          <div className="mx-auto max-w-3xl">
-            <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
-              {sec.heading}
-            </h2>
-            <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-600">
-              {sec.paragraphs.map((p, j) => (
-                <p key={j}>{p}</p>
-              ))}
-            </div>
+      {/* The Republic */}
+      <Section className="bg-stone-50">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
+            The Republic.
+          </h2>
+          <p className="mt-2 text-lg italic text-stone-500">
+            &ldquo;The city is the soul written large.&rdquo;
+          </p>
+          <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-600">
+            <p>
+              Plato&rsquo;s <em>Republic</em> has been read for 2,400 years as
+              political philosophy. When you stop reading it that way and start
+              reading it as an engineering specification, everything changes.
+            </p>
+            <p>
+              The Republic describes a city where happiness is the proper
+              ordering of its parts &mdash; a rational layer that contemplates
+              the Good, a spirited layer that acts on it, and an appetitive layer
+              that wants things. Happiness, in a person or a city, is structural
+              harmony. Not the absence of pain. Not the presence of wealth. Not
+              a feeling. A proportion.
+            </p>
+            <p>
+              If this is right, then a city designed around the specification
+              should produce happy citizens by default, not by accident. That is
+              the bet. The Republic gives us the architecture of the whole.
+            </p>
           </div>
-        </Section>
-      ))}
+        </div>
+      </Section>
 
+      {/* The Laws */}
       <Section className="bg-white">
         <div className="mx-auto max-w-3xl">
-          <div className="mt-2">
-            <ImageSlot language="proof" description="The Synthesis — visual showing Republic (structure) + Laws (texture) + Philebus (kernel) + Vitruvius (form) + Mondragón (economics) converging into The Living City" shot="Shot #53 — Synthesis diagram" aspect="16/9" />
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
+            The Laws.
+          </h2>
+          <p className="mt-2 text-lg italic text-stone-500">
+            &ldquo;A city should have a calendar, not just an economy.&rdquo;
+          </p>
+          <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-600">
+            <p>
+              Where the Republic describes the structure, Plato&rsquo;s{" "}
+              <em>Laws</em> describes the texture. The daily rhythm. The
+              festivals. The way time itself is organized so that work and
+              celebration are not separate activities but the same activity seen
+              from different angles.
+            </p>
+            <p>
+              The Laws specifies a life built around daily rites and monthly
+              festivals, one per god, one per domain. Athenian festivals were
+              roughly a quarter of GDP. That is not waste. That is the city
+              investing in the thing that makes its people want to stay.
+            </p>
+            <p>
+              We are bringing this back. Not as cosplay, but as operations.
+              Every month in The Living City is a festival month honoring one of
+              the twelve domains &mdash; wisdom, manufacturing, agriculture,
+              defense, arts, trade, and so on. The festival is not a break from
+              work. It is the frame within which that month&rsquo;s work
+              happens.
+            </p>
           </div>
         </div>
       </Section>
 
+      {/* The Philebus */}
+      <Section className="bg-stone-50">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
+            The Philebus.
+          </h2>
+          <p className="mt-2 text-lg italic text-stone-500">
+            &ldquo;The machine has to know the difference between appetite and a
+            good life.&rdquo;
+          </p>
+          <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-600">
+            <p>
+              Plato&rsquo;s <em>Philebus</em> is the least-read of his major
+              dialogues and the most important for our work. It answers the
+              question every city eventually has to face: what do you optimize
+              for?
+            </p>
+            <p>
+              Modern platforms optimize for appetite. More engagement. More
+              consumption. More of whatever the user clicked on last. The
+              Philebus says that is precisely backwards. It describes how to
+              combine pleasure and intelligence, appetite and reason, in
+              proportions that produce both happiness and goodness. Not your
+              impulses. Your best self.
+            </p>
+            <p>
+              The Philebus gives us a hierarchy of the Good: measurement at the
+              top, then beauty, then wisdom, then the sciences, and pure
+              pleasures at the base. It gives us a taxonomy of desire. It gives
+              us the tripartite soul &mdash; rational, spirited, appetitive. And
+              it gives us a flow: desires flow in, get organized, get
+              transformed into forethought, align on the Good, and output
+              action.
+            </p>
+            <p>
+              This is the specification we are writing the kernel around. The
+              city&rsquo;s coordination engine does not maximize appetite. It
+              orders desire. It helps you become what you are trying to become,
+              not just consume what you last consumed.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* Vitruvius */}
+      <Section className="bg-white">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
+            Vitruvius.
+          </h2>
+          <p className="mt-2 text-lg italic text-stone-500">
+            &ldquo;Beauty is not decoration. It is operational.&rdquo;
+          </p>
+          <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-600">
+            <p>
+              For the physical city, we use Vitruvius &mdash; the first-century
+              Roman architect whose <em>Ten Books on Architecture</em> became
+              the foundation of classical Western design.
+            </p>
+            <p>
+              Vitruvius specifies six principles every built thing should
+              satisfy: order, arrangement, eurythmy, symmetry, propriety, and
+              economy. These are not aesthetic preferences. They are structural
+              requirements. A building that satisfies all six works. A building
+              that does not, fails &mdash; not because it is ugly, but because
+              it does not serve the people who use it.
+            </p>
+            <p>
+              Vitruvius also gives us construction as rule-and-compass in the
+              Euclidean sense. Designs are reproducible, teachable, and
+              certifiable. Every building, street, and zone passes through these
+              six principles before it is built. Beauty in this system is not
+              something you add at the end. It is the evidence that the design is
+              correct.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* Mondrag\u00f3n */}
+      <Section className="bg-stone-50">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
+            Mondrag&oacute;n.
+          </h2>
+          <p className="mt-2 text-lg italic text-stone-500">
+            &ldquo;The economics have to work in the world we actually live
+            in.&rdquo;
+          </p>
+          <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-600">
+            <p>
+              Plato describes the structure. Vitruvius describes the form.
+              Mondrag&oacute;n proves the economics work.
+            </p>
+            <p>
+              Mondrag&oacute;n Cooperative Corporation is a federation of 80,000
+              worker-owners in Spain&rsquo;s Basque region. Founded in 1956.
+              Current revenue: $12.9 billion annually. It has survived the
+              Spanish Civil War, the Franco regime, the 2008 financial crisis,
+              and a global pandemic.
+            </p>
+            <p>
+              Our operator model is drawn directly from Mondrag&oacute;n. Zone
+              operators own their enterprises outright. The city provides land,
+              infrastructure, and coordination. The operators provide capital,
+              expertise, and work. Profits belong to the operators. Decisions
+              that affect the whole city run through governance structures
+              modeled on Mondrag&oacute;n&rsquo;s federal council.
+            </p>
+            <p>
+              This is not untested idealism. This is a seventy-year-old proof
+              that cooperative economics can operate at industrial scale, in bad
+              economies, under hostile governments, and still grow.
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* The Synthesis */}
+      <Section className="bg-white">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
+            The synthesis.
+          </h2>
+          <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-600">
+            <p>
+              Put it together and here is what you get:
+            </p>
+            <ul className="space-y-2">
+              <li className="flex gap-3">
+                <span className="text-stone-400">&bull;</span>
+                <span>
+                  The city&rsquo;s <strong className="text-stone-900">structure</strong> comes from
+                  Plato&rsquo;s Republic.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-stone-400">&bull;</span>
+                <span>
+                  The city&rsquo;s <strong className="text-stone-900">daily texture</strong> comes from
+                  Plato&rsquo;s Laws.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-stone-400">&bull;</span>
+                <span>
+                  The city&rsquo;s <strong className="text-stone-900">kernel</strong> comes from
+                  Plato&rsquo;s Philebus.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-stone-400">&bull;</span>
+                <span>
+                  The city&rsquo;s <strong className="text-stone-900">physical form</strong> comes from
+                  Vitruvius.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-stone-400">&bull;</span>
+                <span>
+                  The city&rsquo;s <strong className="text-stone-900">economics</strong> comes from
+                  Mondrag&oacute;n.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-stone-400">&bull;</span>
+                <span>
+                  The city&rsquo;s <strong className="text-stone-900">land</strong> comes from the
+                  Cumberland Plateau.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-stone-400">&bull;</span>
+                <span>
+                  The city&rsquo;s <strong className="text-stone-900">financing</strong> comes from
+                  Tennessee utility district law, federal and state grants, and
+                  cooperative operator capital.
+                </span>
+              </li>
+            </ul>
+            <p>
+              Every piece has 2,400 years of precedent, 70 years of modern
+              proof, or both. Nothing here is untested. What is new is the
+              combination.
+            </p>
+          </div>
+          <div className="mt-10">
+            <ImageSlot
+              language="proof"
+              description="The Synthesis — visual showing Republic (structure) + Laws (texture) + Philebus (kernel) + Vitruvius (form) + Mondrag\u00f3n (economics) converging into The Living City"
+              shot="Shot #53 — Synthesis diagram"
+              aspect="16/9"
+            />
+          </div>
+        </div>
+      </Section>
+
+      {/* Further reading */}
       <Section className="bg-stone-50">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
             Further reading.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-stone-600">
-            If you want to go deeper, these are the texts that formed the specification.
-            Every one is in the public domain.
+            If you want to go deeper, these are the texts that formed the
+            specification. Every one is in the public domain.
           </p>
           <ul className="mt-6 space-y-2 text-base text-stone-700">
-            <li>Plato, <em>Republic</em></li>
-            <li>Plato, <em>Laws</em></li>
-            <li>Plato, <em>Philebus</em></li>
-            <li>Plato, <em>Timaeus</em></li>
-            <li>Euclid, <em>Elements</em></li>
-            <li>Vitruvius, <em>Ten Books on Architecture</em></li>
-            <li>José María Arizmendiarrieta, writings on Mondragón</li>
+            <li>
+              Plato, <em>Republic</em>
+            </li>
+            <li>
+              Plato, <em>Laws</em>
+            </li>
+            <li>
+              Plato, <em>Philebus</em>
+            </li>
+            <li>
+              Plato, <em>Timaeus</em>
+            </li>
+            <li>
+              Euclid, <em>Elements</em>
+            </li>
+            <li>
+              Vitruvius, <em>Ten Books on Architecture</em>
+            </li>
+            <li>
+              Jos&eacute; Mar&iacute;a Arizmendiarrieta, writings on
+              Mondrag&oacute;n
+            </li>
           </ul>
           <div className="mt-8">
-            <ImageSlot language="proof" description="Source text collage — aged pages from Republic, Elements, Ten Books overlapping, showing the real intellectual substrate" shot="Shot #54 — Source texts" aspect="3/1" className="min-h-[100px]" />
+            <ImageSlot
+              language="proof"
+              description="Source text collage — aged pages from Republic, Elements, Ten Books overlapping, showing the real intellectual substrate"
+              shot="Shot #54 — Source texts"
+              aspect="3/1"
+              className="min-h-[100px]"
+            />
           </div>
         </div>
       </Section>
 
+      {/* CTA */}
       <Section className="bg-white">
         <div className="mx-auto max-w-2xl text-center">
           <div className="flex flex-col items-stretch justify-center gap-3 sm:flex-row">
@@ -101,7 +376,7 @@ export default function BlueprintPage() {
               Return home
             </Link>
             <Link
-              href="/operator"
+              href="/operators"
               className="inline-flex items-center justify-center rounded-sm bg-stone-900 px-6 py-3 text-sm font-semibold text-white hover:bg-stone-800"
             >
               Apply
@@ -112,52 +387,3 @@ export default function BlueprintPage() {
     </>
   );
 }
-
-const SECTIONS = [
-  {
-    heading: "The Republic is a specification.",
-    paragraphs: [
-      "Plato's Republic has been read for 2,400 years as political philosophy. When you stop reading it that way and start reading it as an engineering specification, everything changes.",
-      "The Republic describes a city where happiness is the proper ordering of its parts — a rational layer that contemplates the Good, a spirited layer that acts on it, and an appetitive layer that wants things. Happiness, in a person or a city, is structural harmony. Not the absence of pain. Not the presence of wealth.",
-      "If this is right, then a city designed around the specification should produce happy citizens by default, not by accident. That is the bet.",
-    ],
-  },
-  {
-    heading: "The Laws describes the daily texture.",
-    paragraphs: [
-      "Where the Republic describes the structure, Plato's Laws describes the texture. It specifies a life built around daily rites and monthly festivals, one per god, one per domain. Athenian festivals were roughly a quarter of GDP. Work and celebration were not separate activities in the ancient city. They were the same activity.",
-      "We are bringing this back. Not as cosplay, but as operations. Every month in The Living City is a festival month honoring one of the twelve gods, and each god corresponds to a domain of life — wisdom, manufacturing, agriculture, defense, arts, trade, and so on. The festival is not a break from work. It is the frame within which that month's work happens.",
-    ],
-  },
-  {
-    heading: "The Philebus is the kernel.",
-    paragraphs: [
-      "Plato's Philebus is the least-read of his major dialogues and the most important for our work. It describes how to combine pleasure and intelligence, appetite and reason, in proportions that produce both happiness and goodness.",
-      "The Philebus gives us a hierarchy of the Good: measurement at the top, beauty, wisdom, the sciences, and pure pleasures at the base. It gives us a taxonomy of pleasure. It gives us the tripartite soul. And it gives us a flow: desires flow in, get organized, get transformed into forethought, align on the Good, and output action.",
-      "This is the specification we are writing the kernel around. Not as metaphor — as a working design document.",
-    ],
-  },
-  {
-    heading: "Vitruvius provides the grammar.",
-    paragraphs: [
-      "For the physical city, we use Vitruvius — the first-century Roman architect whose Ten Books on Architecture became the foundation of classical Western design.",
-      "Vitruvius specifies six principles every built thing should satisfy: order, arrangement, eurythmy, symmetry, propriety, and economy. Every building, street, and zone passes through these six principles before it is built.",
-      "Vitruvius also gives us construction as rule-and-compass in the Euclidean sense. Designs are reproducible, teachable, and certifiable.",
-    ],
-  },
-  {
-    heading: "Mondragón proves the economics.",
-    paragraphs: [
-      "Plato describes the structure. Vitruvius describes the form. Mondragón proves the economics work.",
-      "Mondragón Cooperative Corporation is a federation of 80,000 worker-owners in Spain's Basque region. Founded in 1956. Current revenue: $12.9 billion annually. It has survived the Spanish Civil War, the Franco regime, the 2008 financial crisis, and a global pandemic.",
-      "Our operator model is drawn directly from Mondragón. Zone operators own their enterprises outright. The city provides land, infrastructure, and coordination. The operators provide capital, expertise, and work. Profits belong to the operators. Decisions that affect the whole city run through governance structures modeled on Mondragón's federal council.",
-    ],
-  },
-  {
-    heading: "The synthesis.",
-    paragraphs: [
-      "Put it together and here is what you get: The city's structure comes from Plato's Republic. The city's daily texture comes from Plato's Laws. The city's kernel comes from Plato's Philebus. The city's physical form comes from Vitruvius. The city's economics comes from Mondragón. The city's land comes from the Cumberland Plateau. The city's financing comes from Tennessee utility district law, federal and state grants, and cooperative operator capital.",
-      "Every piece has 2,400 years of precedent, 70 years of modern proof, or both. Nothing here is untested. What is new is the combination.",
-    ],
-  },
-];
