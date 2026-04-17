@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
-import { ImageSlot } from "@/components/ui/ImageSlot";
+
 
 export const metadata: Metadata = {
   title: "How It Works | The Living City",
@@ -30,13 +30,9 @@ export default function HowItWorksPage() {
       </section>
 
       <div className="mx-auto max-w-5xl px-6">
-        <ImageSlot
-          language="awakening"
-          description="Aerial view of the plateau at dawn — mist in valleys, ridges catching first light, the landscape that becomes the city"
-          shot="Shot #25 — Dawn aerial hero"
-          aspect="21/9"
-          className="min-h-[200px]"
-        />
+        <div className="aspect-[21/9] min-h-[200px] overflow-hidden rounded-sm">
+          <img src="/images/property/photo-041.jpg" alt="Aerial view of the Cumberland Plateau at dusk — ridges stretching to the horizon, the landscape that becomes the city" className="h-full w-full object-cover" />
+        </div>
       </div>
 
       {/* ── 2. HOW TO READ THIS PAGE ── */}
@@ -178,13 +174,9 @@ export default function HowItWorksPage() {
             ))}
           </div>
           <div className="mt-10">
-            <ImageSlot
-              language="proof"
-              description="Twelve-domain wheel or constellation — each domain labeled, showing interconnections"
-              shot="Shot #30 — Twelve domains diagram"
-              aspect="1/1"
-              className="max-w-md mx-auto"
-            />
+            <div className="aspect-[1/1] max-w-md mx-auto overflow-hidden rounded-sm">
+              <img src="/images/generated/how-it-works-domains.jpeg" alt="Twelve-domain constellation showing each domain labeled with interconnections" className="h-full w-full object-cover" />
+            </div>
           </div>
           <p className="mt-8 text-sm leading-relaxed text-stone-600">
             No single domain runs in isolation. A bakery (Home / Hospitality)
@@ -227,12 +219,9 @@ export default function HowItWorksPage() {
             That is the whole mechanism. Everything else is detail.
           </p>
           <div className="mt-10">
-            <ImageSlot
-              language="proof"
-              description="The coordination loop diagram: wants → shared list → dependency map → missions → contests → new capability"
-              shot="Shot #28 — Loop diagram"
-              aspect="16/9"
-            />
+            <div className="aspect-[16/9] overflow-hidden rounded-sm">
+              <img src="/images/generated/how-it-works-loop.jpeg" alt="The coordination loop: wants to shared list to dependency map to missions to contests to new capability" className="h-full w-full object-cover" />
+            </div>
           </div>
         </div>
       </Section>
@@ -319,12 +308,9 @@ export default function HowItWorksPage() {
             vision possible.
           </p>
           <div className="mt-8">
-            <ImageSlot
-              language="pioneering"
-              description="Small team working together on the land — honest, early, real"
-              shot="Shot #13 — Team around prototype"
-              aspect="16/9"
-            />
+            <div className="aspect-[16/9] overflow-hidden rounded-sm">
+              <img src="/images/generated/how-it-works-phase1.jpeg" alt="Small team working together on the land in early Phase 1" className="h-full w-full object-cover" />
+            </div>
           </div>
         </div>
       </Section>
@@ -372,13 +358,9 @@ export default function HowItWorksPage() {
             </p>
           </div>
           <div className="mt-10">
-            <ImageSlot
-              language="awakening"
-              description="Domain constellation — 12 luminous nodes across the landscape showing the city at full temperature"
-              shot="Shot #32 — Domain constellation map"
-              aspect="21/9"
-              className="min-h-[200px]"
-            />
+            <div className="aspect-[21/9] min-h-[200px] overflow-hidden rounded-sm">
+              <img src="/images/generated/how-it-works-fullscale.jpeg" alt="Domain constellation with 12 luminous nodes across the landscape showing the city at full temperature" className="h-full w-full object-cover" />
+            </div>
           </div>
           <p className="mt-10 text-lg font-medium leading-relaxed text-stone-900">
             A city that is constantly redesigning its locations, calendars,
@@ -418,12 +400,9 @@ export default function HowItWorksPage() {
             </p>
           </div>
           <div className="mt-8">
-            <ImageSlot
-              language="proof"
-              description="Coordination layer diagram — AI as nervous system connecting 12 domains, with residents at the center"
-              shot="Shot #33 — AI core diagram"
-              aspect="16/9"
-            />
+            <div className="aspect-[16/9] overflow-hidden rounded-sm">
+              <img src="/images/generated/how-it-works-ai.jpeg" alt="AI coordination layer as nervous system connecting 12 domains with residents at the center" className="h-full w-full object-cover" />
+            </div>
           </div>
         </div>
       </Section>

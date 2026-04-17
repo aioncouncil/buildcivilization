@@ -50,13 +50,9 @@ export default function InvestorsPage() {
 
       {/* Hero visual */}
       <div className="mx-auto max-w-5xl px-6">
-        <ImageSlot
-          language="substrate"
-          description="The plateau from above — property boundary overlay on aerial, showing scale of the 15,491-acre substrate"
-          shot="Shot #29 — Investor hero aerial"
-          aspect="21/9"
-          className="min-h-[200px]"
-        />
+        <div className="aspect-[21/9] min-h-[200px] overflow-hidden rounded-sm">
+          <img src="/images/generated/investors-hero.jpeg" alt="Aerial view of the 15,491-acre Cumberland Plateau substrate with property boundary overlay" className="h-full w-full object-cover" />
+        </div>
       </div>
 
       {/* ─── 2. THE OPPORTUNITY ─── */}
@@ -221,13 +217,9 @@ export default function InvestorsPage() {
             </div>
           </div>
           <div className="mt-8">
-            <ImageSlot
-              language="proof"
-              description="Bond cascade diagram: Acquire → Municipalize → Infrastructure → Revalue → Repeat"
-              shot="Shot #31"
-              aspect="3/1"
-              className="min-h-[100px]"
-            />
+            <div className="aspect-[3/1] min-h-[100px] overflow-hidden rounded-sm">
+              <img src="/images/generated/investors-cascade.jpeg" alt="Bond cascade diagram: Acquire, Municipalize, Infrastructure, Revalue, Repeat" className="h-full w-full object-cover" />
+            </div>
           </div>
           <p className="mt-10 text-base font-medium text-stone-900">
             Each phase changes what the land is worth because each phase changes what the
@@ -265,12 +257,9 @@ export default function InvestorsPage() {
             </p>
           </div>
           <div className="mt-8">
-            <ImageSlot
-              language="substrate"
-              description="Tennessee map highlighting Campbell & Scott Counties, with I-75, CSX rail, and distance rings to Knoxville/Nashville/Atlanta"
-              shot="Shot #33 — Tennessee location map"
-              aspect="4/3"
-            />
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <img src="/images/generated/investors-tennessee.jpeg" alt="Tennessee map highlighting Campbell and Scott Counties with I-75, CSX rail, and distance rings" className="h-full w-full object-cover" />
+            </div>
           </div>
         </div>
       </Section>
@@ -307,13 +296,9 @@ export default function InvestorsPage() {
             </div>
           </div>
           <div className="mt-10">
-            <ImageSlot
-              language="awakening"
-              description="Split visual: left side raw land (today), right side the same ridge with infrastructure at full scale"
-              shot="Shot #34 — Before/after transformation"
-              aspect="2/1"
-              className="min-h-[180px]"
-            />
+            <div className="aspect-[2/1] min-h-[180px] overflow-hidden rounded-sm">
+              <img src="/images/generated/investors-asymmetry.jpeg" alt="Before and after transformation: raw land on the left, full-scale infrastructure on the right" className="h-full w-full object-cover" />
+            </div>
           </div>
         </div>
       </Section>
@@ -367,13 +352,9 @@ export default function InvestorsPage() {
             with the city.
           </p>
           <div className="mt-8">
-            <ImageSlot
-              language="proof"
-              description="Phase structure timeline — 4 phases left to right: Proof (50) → Validate (500) → Scale (5K) → Full (50K)"
-              shot="Shot #35 — Phase timeline diagram"
-              aspect="4/1"
-              className="min-h-[80px]"
-            />
+            <div className="aspect-[4/1] min-h-[80px] overflow-hidden rounded-sm">
+              <img src="/images/generated/investors-phases.jpeg" alt="Phase structure timeline from Proof (50 people) through Validate, Scale, to Full (50,000 people)" className="h-full w-full object-cover" />
+            </div>
           </div>
         </div>
       </Section>

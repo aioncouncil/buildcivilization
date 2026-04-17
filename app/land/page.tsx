@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
-import { ImageSlot } from "@/components/ui/ImageSlot";
+
 
 export const metadata: Metadata = {
   title: "The Land | The Living City",
@@ -104,13 +104,8 @@ export default function LandPage() {
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">
             Where it is.
           </h2>
-          <div className="mb-10">
-            <ImageSlot
-              language="substrate"
-              description="Property boundary / parcel map overlay on satellite imagery"
-              shot="Shot #22 — Parcel map"
-              aspect="16/9"
-            />
+          <div className="mb-10 aspect-[16/9] overflow-hidden rounded-sm">
+            <img src="/images/property/photo-068.jpg" alt="Property boundary overlay on satellite imagery showing 15,491 contiguous acres across Campbell and Scott Counties" className="h-full w-full object-cover" />
           </div>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-stone-600">
             Pioneer, Tennessee. Cumberland Plateau. Spanning Campbell and Scott
@@ -239,32 +234,20 @@ export default function LandPage() {
             </table>
           </div>
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
-            <ImageSlot
-              language="substrate"
-              description="Mine entrance — the pre-existing underground infrastructure at 55\u00B0F year-round, future compute housing"
-              shot="Shot #46 — Mine entrance"
-              aspect="4/3"
-            />
-            <ImageSlot
-              language="substrate"
-              description="Active wellhead — one of 27 producing oil/gas wells on the property"
-              shot="Shot #47 — Wellhead close-up"
-              aspect="4/3"
-            />
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <img src="/images/property/photo-136.jpg" alt="Mine entrance and exposed rock face — pre-existing underground infrastructure at 55°F year-round" className="h-full w-full object-cover" />
+            </div>
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <img src="/images/property/photo-012.jpg" alt="Active well pad — one of 27 producing oil and gas wells on the property" className="h-full w-full object-cover" />
+            </div>
           </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            <ImageSlot
-              language="substrate"
-              description="Silica sand close-up — 98.52% SiO\u2082, the raw material for glass and solar manufacturing"
-              shot="Shot #48 — Silica sample"
-              aspect="4/3"
-            />
-            <ImageSlot
-              language="substrate"
-              description="CSX railroad crossing the property — active rail for logistics and material transport"
-              shot="Shot #49 — Railroad access"
-              aspect="4/3"
-            />
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <img src="/images/property/photo-040.jpg" alt="Exposed silica sand deposit — 98.52% SiO2, raw material for glass and solar manufacturing" className="h-full w-full object-cover" />
+            </div>
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <img src="/images/property/photo-124.jpg" alt="CSX railroad crossing the property — active rail for logistics and material transport" className="h-full w-full object-cover" />
+            </div>
           </div>
         </div>
       </Section>

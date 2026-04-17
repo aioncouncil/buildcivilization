@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
-import { ImageSlot } from "@/components/ui/ImageSlot";
+
 
 export const metadata: Metadata = {
   title: "Operators | The Living City",
@@ -36,7 +36,9 @@ export default function OperatorsPage() {
             Open to accredited investors only. Verification required before term sheet access.
           </p>
           <div className="mt-10">
-            <ImageSlot language="pioneering" description="Operator at work — serious person in a forge, lab, or workshop with real materials, frontier energy" shot="Shot #50 — Operator hero" aspect="16/9" />
+            <div className="aspect-[16/9] overflow-hidden rounded-sm">
+              <img src="/images/generated/operators-hero.jpeg" alt="Operator at work in a forge with real materials and frontier energy" className="h-full w-full object-cover" />
+            </div>
           </div>
         </div>
       </section>
@@ -275,7 +277,9 @@ export default function OperatorsPage() {
             world possible.
           </p>
           <div className="mt-8">
-            <ImageSlot language="pioneering" description="Phase 1 site — construction, first shells, people working, frontier energy" shot="Shot #51 — Operator Phase 1" aspect="16/9" />
+            <div className="aspect-[16/9] overflow-hidden rounded-sm">
+              <img src="/images/generated/operators-phase1.jpeg" alt="Phase 1 construction site with first shells going up and people working" className="h-full w-full object-cover" />
+            </div>
           </div>
         </div>
       </Section>
@@ -303,7 +307,9 @@ export default function OperatorsPage() {
             permanent memory.
           </p>
           <div className="mt-8">
-            <ImageSlot language="festival" description="Full city at scale — Forerunner architecture, festivals, alive with activity" shot="Shot #52 — Full city operator view" aspect="16/9" />
+            <div className="aspect-[16/9] overflow-hidden rounded-sm">
+              <img src="/images/generated/operators-fullcity.jpeg" alt="Full city at scale with Forerunner architecture and festivals alive with activity" className="h-full w-full object-cover" />
+            </div>
           </div>
         </div>
       </Section>

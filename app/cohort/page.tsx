@@ -31,7 +31,9 @@ export default function CohortPage() {
             <a href="mailto:cohort@buildcivilization.com?subject=Cohort%20Question" className="inline-flex items-center justify-center rounded-sm border border-stone-300 px-6 py-3 text-sm font-semibold text-stone-900 hover:bg-stone-50">Ask a question</a>
           </div>
           <div className="mt-10">
-            <ImageSlot language="pioneering" description="5-8 serious people around prototype, drone, or planning table — frontier lab energy" shot="Shot #60 — Cohort hero" aspect="16/9" />
+            <div className="aspect-[16/9] overflow-hidden rounded-sm">
+              <img src="/images/generated/cohort-hero.jpeg" alt="Serious people gathered around a prototype and planning table with frontier lab energy" className="h-full w-full object-cover" />
+            </div>
           </div>
         </div>
       </section>
@@ -170,7 +172,9 @@ export default function CohortPage() {
             </p>
           </div>
           <div className="mt-8">
-            <ImageSlot language="awakening" description="Forerunner districts alive with festivals — the full city at scale" shot="Shot #66 — Full city cohort view" aspect="16/9" />
+            <div className="aspect-[16/9] overflow-hidden rounded-sm">
+              <img src="/images/generated/cohort-fullcity.jpeg" alt="Forerunner districts alive with festivals at full city scale" className="h-full w-full object-cover" />
+            </div>
           </div>
           <p className="mt-4 text-base font-medium text-white">
             You are not just joining a program. You are arriving early enough to help

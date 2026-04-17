@@ -78,13 +78,8 @@ export default function FounderPage() {
 
           <p>So I started looking for substrate.</p>
 
-          <div className="my-8">
-            <ImageSlot
-              language="substrate"
-              description="The land itself — a wide vista from the ridge, showing the scale and beauty of the plateau, the substrate Mars found"
-              shot="Shot #50 — The substrate"
-              aspect="16/9"
-            />
+          <div className="my-8 aspect-[16/9] overflow-hidden rounded-sm">
+            <img src="/images/property/photo-062.jpg" alt="Sunset over the Cumberland Plateau — the substrate, ridges receding into the distance" className="h-full w-full object-cover" />
           </div>
 
           <p>
