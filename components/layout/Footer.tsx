@@ -28,8 +28,8 @@ export function Footer() {
             </p>
             <div className="mt-4 flex flex-col gap-2.5">
               <Link href="/investors" className="text-sm text-stone-300 hover:text-white">Investors</Link>
-              <Link href="/operator" className="text-sm text-stone-300 hover:text-white">Operators</Link>
-              <Link href="/builder" className="text-sm text-stone-300 hover:text-white">Builders</Link>
+              <Link href="/operators" className="text-sm text-stone-300 hover:text-white">Operators</Link>
+              <Link href="/cohort" className="text-sm text-stone-300 hover:text-white">Founding Cohort</Link>
             </div>
           </div>
           <div>

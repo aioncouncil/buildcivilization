@@ -3,8 +3,8 @@ import Link from "next/link";
 const NAV = [
   { href: "/how-it-works", label: "How It Works" },
   { href: "/land", label: "The Land" },
-  { href: "/operator", label: "Operators" },
-  { href: "/builder", label: "Builders" },
+  { href: "/operators", label: "Operators" },
+  { href: "/cohort", label: "Founding Cohort" },
   { href: "/investors", label: "Investors" },
   { href: "/updates", label: "Updates" },
 ];
@@ -30,7 +30,7 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/operator"
+            href="/cohort"
             className="rounded-sm bg-stone-900 px-5 py-2 text-[14px] font-semibold text-white transition-colors hover:bg-stone-800"
           >
             Apply
