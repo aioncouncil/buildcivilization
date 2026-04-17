@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
-import { ImageSlot } from "@/components/ui/ImageSlot";
+
 
 export const metadata: Metadata = {
   title: "Investors | The Living City",
@@ -165,14 +165,8 @@ export default function InvestorsPage() {
               </div>
             ))}
           </div>
-          <div className="mt-8">
-            <ImageSlot
-              language="substrate"
-              description="Asset floor grid — aerial overlays of each asset category on the property map"
-              shot="Shot #30 — Asset floor composite"
-              aspect="16/9"
-              className="min-h-[160px]"
-            />
+          <div className="mt-8 aspect-[16/9] min-h-[160px] overflow-hidden rounded-sm">
+            <img src="/images/generated/investors-assetfloor.jpeg" alt="Property map with asset labels — silica, mines, wells, timber, water, railroad" className="h-full w-full object-cover" />
           </div>
         </div>
       </Section>

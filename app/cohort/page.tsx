@@ -107,10 +107,10 @@ export default function CohortPage() {
             ))}
           </div>
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <ImageSlot language="pioneering" description="Autonomous systems — drone over terrain, sensor array" shot="Shot #61 — Autonomy track" aspect="1/1" />
-            <ImageSlot language="awakening" description="The Kernel — code on screens, coordination dashboard" shot="Shot #62 — Kernel track" aspect="1/1" />
-            <ImageSlot language="pioneering" description="Manufacturing — CNC, glass furnace, materials lab" shot="Shot #63 — Manufacturing track" aspect="1/1" />
-            <ImageSlot language="festival" description="Architecture — model on table, building rising behind" shot="Shot #64 — Architecture track" aspect="1/1" />
+            <div className="aspect-[1/1] overflow-hidden rounded-sm"><img src="/images/generated/track-autonomy.png" alt="Autonomous systems — drone over terrain" className="h-full w-full object-cover" /></div>
+            <div className="aspect-[1/1] overflow-hidden rounded-sm"><img src="/images/generated/track-kernel.png" alt="The Kernel — coordination network" className="h-full w-full object-cover" /></div>
+            <div className="aspect-[1/1] overflow-hidden rounded-sm"><img src="/images/generated/track-manufacturing.png" alt="Manufacturing — fabrication facility" className="h-full w-full object-cover" /></div>
+            <div className="aspect-[1/1] overflow-hidden rounded-sm"><img src="/images/generated/track-architecture.png" alt="Architecture — buildings on the ridge" className="h-full w-full object-cover" /></div>
           </div>
         </div>
       </Section>
@@ -151,7 +151,7 @@ export default function CohortPage() {
             world possible.
           </p>
           <div className="mt-8">
-            <ImageSlot language="pioneering" description="Phase 1 daily life — shared meal outdoors, small group, real setting, honest and early" shot="Shot #65 — Cohort Phase 1 life" aspect="16/9" />
+            <div className="aspect-[16/9] overflow-hidden rounded-sm"><img src="/images/generated/cohort-phase1-life.png" alt="Phase 1 daily life — shared meal outdoors on the land" className="h-full w-full object-cover" /></div>
           </div>
         </div>
       </Section>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
-import { ImageSlot } from "@/components/ui/ImageSlot";
+
 
 export const metadata: Metadata = {
   title: "Blueprint | The Living City",
@@ -44,13 +44,8 @@ export default function BlueprintPage() {
             actually produces good lives &mdash; this is where we explain it.
             Five sources. One synthesis.
           </p>
-          <div className="mt-10">
-            <ImageSlot
-              language="proof"
-              description="The Divided Line — Plato's epistemological architecture rendered as a clean geometric diagram: visible/intelligible, images/objects/mathematics/forms"
-              shot="Shot #52 — Divided Line diagram"
-              aspect="16/9"
-            />
+          <div className="mt-10 aspect-[16/9] overflow-hidden rounded-sm">
+            <img src="/images/generated/blueprint-dividedline.png" alt="Plato's Divided Line — Forms, Mathematics, Objects, Images" className="h-full w-full object-cover" />
           </div>
         </div>
       </Section>
@@ -308,13 +303,8 @@ export default function BlueprintPage() {
               combination.
             </p>
           </div>
-          <div className="mt-10">
-            <ImageSlot
-              language="proof"
-              description="The Synthesis — visual showing Republic (structure) + Laws (texture) + Philebus (kernel) + Vitruvius (form) + Mondrag\u00f3n (economics) converging into The Living City"
-              shot="Shot #53 — Synthesis diagram"
-              aspect="16/9"
-            />
+          <div className="mt-10 aspect-[16/9] overflow-hidden rounded-sm">
+            <img src="/images/generated/blueprint-synthesis.png" alt="Five sources converging: Republic, Laws, Philebus, Vitruvius, Mondragón → The Living City" className="h-full w-full object-cover" />
           </div>
         </div>
       </Section>
@@ -353,14 +343,8 @@ export default function BlueprintPage() {
               Mondrag&oacute;n
             </li>
           </ul>
-          <div className="mt-8">
-            <ImageSlot
-              language="proof"
-              description="Source text collage — aged pages from Republic, Elements, Ten Books overlapping, showing the real intellectual substrate"
-              shot="Shot #54 — Source texts"
-              aspect="3/1"
-              className="min-h-[100px]"
-            />
+          <div className="mt-8 aspect-[3/1] min-h-[100px] overflow-hidden rounded-sm">
+            <img src="/images/generated/blueprint-sources.png" alt="Aged philosophical texts — Republic, Elements, Ten Books" className="h-full w-full object-cover" />
           </div>
         </div>
       </Section>
