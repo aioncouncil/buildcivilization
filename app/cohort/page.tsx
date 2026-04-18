@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
-import { ImageSlot } from "@/components/ui/ImageSlot";
 
 export const metadata: Metadata = {
   title: "Founding Cohort | The Living City",
@@ -32,7 +31,7 @@ export default function CohortPage() {
           </div>
           <div className="mt-10">
             <div className="aspect-[16/9] overflow-hidden rounded-sm">
-              <img src="/images/generated/cohort-hero.jpeg" alt="Serious people gathered around a prototype and planning table with frontier lab energy" className="h-full w-full object-cover" />
+              <img src="/images/festivals/keepers/dawn-ridge-runner-pro.jpeg" alt="An athlete running at dawn along a Forerunner stone path through the forested Cumberland ridge, pace and distance HUD, contest banners overhead, cheering crowd along the route" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>
@@ -107,10 +106,10 @@ export default function CohortPage() {
             ))}
           </div>
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="aspect-[1/1] overflow-hidden rounded-sm"><img src="/images/generated/track-autonomy.png" alt="Autonomous systems — drone over terrain" className="h-full w-full object-cover" /></div>
-            <div className="aspect-[1/1] overflow-hidden rounded-sm"><img src="/images/generated/track-kernel.png" alt="The Kernel — coordination network" className="h-full w-full object-cover" /></div>
-            <div className="aspect-[1/1] overflow-hidden rounded-sm"><img src="/images/generated/track-manufacturing.png" alt="Manufacturing — fabrication facility" className="h-full w-full object-cover" /></div>
-            <div className="aspect-[1/1] overflow-hidden rounded-sm"><img src="/images/generated/track-architecture.png" alt="Architecture — buildings on the ridge" className="h-full w-full object-cover" /></div>
+            <div className="aspect-[1/1] overflow-hidden rounded-sm"><img src="/images/festivals/keepers/harbor-dive-pro.jpeg" alt="Autonomy track — traveler leaping onto a departing hovercraft, destination quest-marker overhead, autonomous logistics visible" className="h-full w-full object-cover" /></div>
+            <div className="aspect-[1/1] overflow-hidden rounded-sm"><img src="/images/festivals/keepers/scholars-debate-v2-pro.jpeg" alt="Coordination track — scholars mid-debate around a glowing holographic equation, score ticker and leaderboard floating above" className="h-full w-full object-cover" /></div>
+            <div className="aspect-[1/1] overflow-hidden rounded-sm"><img src="/images/festivals/keepers/forge-work-pro.jpeg" alt="Manufacturing track — smith mid-strike at a Forerunner forge carved into the mountain, cyan sparks, holographic schematic beside the workbench" className="h-full w-full object-cover" /></div>
+            <div className="aspect-[1/1] overflow-hidden rounded-sm"><img src="/images/festivals/keepers/parade-bridge-pro.jpeg" alt="Architecture track — festival parade crossing a Forerunner bridge over a forested Appalachian valley, floating performance platform alongside" className="h-full w-full object-cover" /></div>
           </div>
         </div>
       </Section>
@@ -151,7 +150,7 @@ export default function CohortPage() {
             world possible.
           </p>
           <div className="mt-8">
-            <div className="aspect-[16/9] overflow-hidden rounded-sm"><img src="/images/generated/cohort-phase1-life.png" alt="Phase 1 daily life — shared meal outdoors on the land" className="h-full w-full object-cover" /></div>
+            <div className="aspect-[16/9] overflow-hidden rounded-sm"><img src="/images/property/photo-048.jpg" alt="Road through wildflower meadow at sunset — evening on the land after a day of work" className="h-full w-full object-cover" /></div>
           </div>
         </div>
       </Section>
@@ -173,7 +172,7 @@ export default function CohortPage() {
           </div>
           <div className="mt-8">
             <div className="aspect-[16/9] overflow-hidden rounded-sm">
-              <img src="/images/generated/cohort-fullcity.jpeg" alt="Forerunner districts alive with festivals at full city scale" className="h-full w-full object-cover" />
+              <img src="/images/festivals/keepers/waterfall-temple-pro.jpeg" alt="Full-scale vision — pilgrims ascending a cyan-seamed Forerunner temple built into a real Cumberland Plateau waterfall, forest wrapping the structure" className="h-full w-full object-cover" />
             </div>
           </div>
           <p className="mt-4 text-base font-medium text-white">

@@ -51,7 +51,7 @@ export default function InvestorsPage() {
       {/* Hero visual */}
       <div className="mx-auto max-w-5xl px-6">
         <div className="aspect-[21/9] min-h-[200px] overflow-hidden rounded-sm">
-          <img src="/images/generated/investors-hero.jpeg" alt="Aerial view of the 15,491-acre Cumberland Plateau substrate with property boundary overlay" className="h-full w-full object-cover" />
+          <img src="/images/property/photo-026.jpg" alt="Dawn aerial of the Cumberland Plateau substrate — switchback roads descending into layered mountain ridges" className="h-full w-full object-cover" />
         </div>
       </div>
 
@@ -71,7 +71,7 @@ export default function InvestorsPage() {
               The land makes it real.<br />
               The bond and grant structure makes it financeable.<br />
               The zone model makes it productive.<br />
-              The kernel makes it alive.
+              The coordination layer makes it alive.
             </p>
             <p className="font-medium text-white">
               This is the investor bet: the first living city built not as a vanity
@@ -79,6 +79,44 @@ export default function InvestorsPage() {
               and a civilization-scale upside.
             </p>
           </div>
+        </div>
+      </Section>
+
+      {/* ─── 2b. TWO LIVES, ONE CITY ─── */}
+      <Section className="bg-white">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">The structure, in plain English.</h2>
+          <p className="mt-4 text-base leading-relaxed text-stone-600">
+            You are not investing in a real estate fund. You are not backing a charity. You are
+            buying founding shares in the for-profit company that will operate the first living
+            city &mdash; sitting under a nonprofit Foundation that owns the land permanently.
+          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2">
+            <div className="rounded-sm border-l-2 border-amber-600 bg-stone-50 p-6">
+              <p className="text-xs font-mono uppercase tracking-[0.18em] text-amber-700">The Foundation</p>
+              <p className="mt-3 text-lg font-bold text-stone-900">A congregation, permanent.</p>
+              <p className="mt-3 text-sm leading-relaxed text-stone-600">
+                A religious and educational 501(c)(3). Owns the 15,491 acres permanently &mdash;
+                no one can sell the substrate out from under the city. Residents live as members
+                of a congregation, not wage employees. Housing, training, food, ritual, festivals
+                &mdash; the entire architecture of daily life &mdash; runs through the Foundation.
+              </p>
+            </div>
+            <div className="rounded-sm border-l-2 border-stone-900 bg-stone-50 p-6">
+              <p className="text-xs font-mono uppercase tracking-[0.18em] text-stone-600">The Trading Company</p>
+              <p className="mt-3 text-lg font-bold text-stone-900">A for-profit, compounding.</p>
+              <p className="mt-3 text-sm leading-relaxed text-stone-600">
+                A Delaware C-Corp with 100,000,000 authorized shares, operating the city&rsquo;s
+                commercial layer on a 99-year ground lease from the Foundation. This is what
+                you are buying into. Priced at $100M today. Target $5B+ at maturity. Your shares
+                ride that curve.
+              </p>
+            </div>
+          </div>
+          <p className="mt-8 text-base font-medium text-stone-900">
+            The congregation makes the city livable. The company makes the city ownable. You
+            back the company that powers it.
+          </p>
         </div>
       </Section>
 
@@ -105,9 +143,17 @@ export default function InvestorsPage() {
                   <td className="px-4 py-3">Class B common shares</td>
                 </tr>
                 <tr>
+                  <td className="px-4 py-3 font-medium text-stone-900">Pre-money valuation</td>
+                  <td className="px-4 py-3">$100M</td>
+                </tr>
+                <tr>
                   <td className="px-4 py-3 font-medium text-stone-900">Reference price</td>
                   {/* [COUNSEL] — confirm price per share */}
-                  <td className="px-4 py-3">$0.50 / share</td>
+                  <td className="px-4 py-3">$1.00 / share</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-3 font-medium text-stone-900">Authorized shares</td>
+                  <td className="px-4 py-3">100,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 font-medium text-stone-900">Minimum investment</td>
@@ -122,10 +168,43 @@ export default function InvestorsPage() {
           <div className="mt-8 rounded-sm border border-stone-200 bg-stone-50 p-6">
             <p className="text-sm font-semibold text-stone-900">Reference math</p>
             <p className="mt-2 text-sm leading-relaxed text-stone-600">
-              $250K at $0.50/share = 500,000 shares.
+              $250K at $1.00/share = 250,000 shares = 0.25% of the company today.
             </p>
             <p className="mt-1 text-sm leading-relaxed text-stone-600">
-              Target scenario: $5B+ mature valuation &asymp; ~$25M position.
+              Target scenario: $5B+ mature valuation &rarr; shares at $50 &rarr; position worth ~$12.5M. 50&times; on your capital if the city reaches full scale.
+            </p>
+          </div>
+
+          {/* Value trajectory staircase */}
+          <div className="mt-10">
+            <h3 className="text-lg font-bold text-stone-900">The share value trajectory.</h3>
+            <p className="mt-2 text-sm leading-relaxed text-stone-600">
+              Every phase of the city changes what a share is worth, because every phase changes what the
+              company can do. The earlier you come in, the steeper your curve.
+            </p>
+            <div className="mt-6 overflow-hidden rounded-sm border border-stone-200 bg-white">
+              <table className="w-full text-left text-sm">
+                <thead className="bg-stone-50 text-xs uppercase tracking-wide text-stone-500">
+                  <tr>
+                    <th className="px-4 py-3 font-medium">Phase</th>
+                    <th className="px-4 py-3 font-medium">People</th>
+                    <th className="px-4 py-3 text-right font-medium">Price / share</th>
+                    <th className="px-4 py-3 text-right font-medium">Implied valuation</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-stone-200 text-stone-700">
+                  <tr><td className="px-4 py-3">Formation</td><td className="px-4 py-3">0</td><td className="px-4 py-3 text-right">$0.10</td><td className="px-4 py-3 text-right">$10M</td></tr>
+                  <tr className="bg-amber-50"><td className="px-4 py-3 font-semibold">Phase 1 — now</td><td className="px-4 py-3 font-semibold">50</td><td className="px-4 py-3 text-right font-semibold">$1.00</td><td className="px-4 py-3 text-right font-semibold">$100M</td></tr>
+                  <tr><td className="px-4 py-3">Phase 2</td><td className="px-4 py-3">500</td><td className="px-4 py-3 text-right">$2.50</td><td className="px-4 py-3 text-right">$250M</td></tr>
+                  <tr><td className="px-4 py-3">Phase 3</td><td className="px-4 py-3">5,000</td><td className="px-4 py-3 text-right">$15.00</td><td className="px-4 py-3 text-right">$1.5B</td></tr>
+                  <tr><td className="px-4 py-3">Maturity</td><td className="px-4 py-3">50,000</td><td className="px-4 py-3 text-right">$50.00</td><td className="px-4 py-3 text-right">$5B+</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-3 text-xs italic leading-relaxed text-stone-500">
+              Illustrative trajectory tied to operational milestones, not a projection. Actual pricing in
+              each round depends on performance, market conditions, and board approval. You may lose your
+              entire investment.
             </p>
           </div>
 
@@ -146,27 +225,42 @@ export default function InvestorsPage() {
             The asset floor.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-stone-600">
-            If nothing else works, you still own this.
+            If nothing else works, you still own this. Conservative market ranges on the
+            substrate alone &mdash; before we build anything.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {[
-              ["Mountain land", "15,491 acres on the Cumberland Plateau, acquired at ~$1,360/acre"],
-              ["Producing wells", "27 active wells with capacity for 450+"],
-              ["Railroad", "Active CSX rail running through the property"],
-              ["Silica", "75–150M tons high-purity SiO\u2082 (98.52%, verified by three labs)"],
-              ["Hardwood", "15,000+ acres of standing Appalachian hardwood"],
-              ["Mines", "Pre-existing mine infrastructure with year-round 55\u00B0F cooling"],
-              ["Water", "50+ inches annual rainfall, mountain spring and aquifer access"],
-              ["Grants & bonds", "Distressed-county eligibility for federal grants and tax-exempt bonds"],
-            ].map(([title, desc]) => (
+              ["Mountain land", "15,491 acres on the Cumberland Plateau, acquired at ~$1,360/acre", "$32M basis &middot; $1.5&ndash;5.6B mature"],
+              ["Silica", "75\u2013150M tons high-purity SiO\u2082 (98.52%, verified by three labs)", "~$8B resource floor"],
+              ["Coal & mines", "Pre-existing mine infrastructure with year-round 55\u00B0F cooling", "~$2B resource floor"],
+              ["Producing wells", "27 active wells producing today; capacity for 450+", "$500M+ estimated NAV"],
+              ["Hardwood", "15,000+ acres of standing Appalachian hardwood", "~$200M standing timber"],
+              ["Railroad", "Active CSX rail running through the property, 3+ miles of I-75 frontage", "Logistics advantage"],
+              ["Water", "50+ inches annual rainfall, mountain spring and aquifer access", "Strategic, decades of yield"],
+              ["Grants & bonds", "Distressed-county eligibility for federal grants and tax-exempt bonds", "50\u201380% infra match"],
+            ].map(([title, desc, floor]) => (
               <div key={title} className="rounded-sm border border-stone-200 bg-white p-5">
                 <p className="text-sm font-bold text-stone-900">{title}</p>
                 <p className="mt-1 text-sm leading-relaxed text-stone-600">{desc}</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-amber-700" dangerouslySetInnerHTML={{ __html: floor }} />
               </div>
             ))}
           </div>
+          <div className="mt-6 rounded-sm border border-stone-200 bg-white p-5">
+            <p className="text-sm font-bold text-stone-900">Resource floor, summed.</p>
+            <p className="mt-1 text-sm leading-relaxed text-stone-600">
+              ~$11B in verified geological resources sitting under 15,491 acres purchased at a
+              28% discount to appraised value. You are buying shares in the entity that owns
+              the dirt, before any infrastructure, before any operators, before any bonds.
+            </p>
+            <p className="mt-2 text-xs italic leading-relaxed text-stone-500">
+              Resource ranges are industry estimates from lab assays and comparable regional
+              valuations, not liquidation values. Extraction, permitting, and market realization
+              determine realized value. See the data room for methodology.
+            </p>
+          </div>
           <div className="mt-8 aspect-[16/9] min-h-[160px] overflow-hidden rounded-sm">
-            <img src="/images/generated/investors-assetfloor.jpeg" alt="Property map with asset labels — silica, mines, wells, timber, water, railroad" className="h-full w-full object-cover" />
+            <img src="/images/property/photo-021.jpg" alt="Satellite map with all four parcels outlined in yellow — Mars Sand Mountain, Elk Valley, Buffalo, Westbourne Mountain" className="h-full w-full object-cover" />
           </div>
         </div>
       </Section>
@@ -212,7 +306,7 @@ export default function InvestorsPage() {
           </div>
           <div className="mt-8">
             <div className="aspect-[3/1] min-h-[100px] overflow-hidden rounded-sm">
-              <img src="/images/generated/investors-cascade.jpeg" alt="Bond cascade diagram: Acquire, Municipalize, Infrastructure, Revalue, Repeat" className="h-full w-full object-cover" />
+              <img src="/images/property/photo-151.jpg" alt="Aerial of a cleared cut running up into the forest with Appalachian ridgeline behind — infrastructure staging unfolding in phases" className="h-full w-full object-cover" />
             </div>
           </div>
           <p className="mt-10 text-base font-medium text-stone-900">
@@ -252,7 +346,7 @@ export default function InvestorsPage() {
           </div>
           <div className="mt-8">
             <div className="aspect-[4/3] overflow-hidden rounded-sm">
-              <img src="/images/generated/investors-tennessee.jpeg" alt="Tennessee map highlighting Campbell and Scott Counties with I-75, CSX rail, and distance rings" className="h-full w-full object-cover" />
+              <img src="/images/property/photo-042.jpg" alt="Topographic overlay with contour lines and parcel boundary on the Cumberland Plateau — Campbell and Scott Counties, Tennessee" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>
@@ -291,8 +385,9 @@ export default function InvestorsPage() {
           </div>
           <div className="mt-10">
             <div className="aspect-[2/1] min-h-[180px] overflow-hidden rounded-sm">
-              <img src="/images/generated/investors-asymmetry.jpeg" alt="Before and after transformation: raw land on the left, full-scale infrastructure on the right" className="h-full w-full object-cover" />
+              <img src="/images/festivals/keepers/aerial-wondrous-city-pro.jpeg" alt="Full-scale vision — a Forerunner civilization woven through the real Cumberland Plateau ridges, bridges spanning forested valleys at golden hour" className="h-full w-full object-cover" />
             </div>
+            <p className="mt-2 text-xs italic text-stone-500">The dirt is real today. The architecture is the Phase 4 vision. The asymmetry is the bet.</p>
           </div>
         </div>
       </Section>
@@ -347,7 +442,7 @@ export default function InvestorsPage() {
           </p>
           <div className="mt-8">
             <div className="aspect-[4/1] min-h-[80px] overflow-hidden rounded-sm">
-              <img src="/images/generated/investors-phases.jpeg" alt="Phase structure timeline from Proof (50 people) through Validate, Scale, to Full (50,000 people)" className="h-full w-full object-cover" />
+              <img src="/images/festivals/keepers/parade-bridge-pro.jpeg" alt="Phase 4 at full temperature — festival parade crossing a Forerunner bridge across the Cumberland Plateau, musicians and dancers, score leaderboard hovering overhead" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>
@@ -431,6 +526,13 @@ export default function InvestorsPage() {
               investors@buildcivilization.com
             </a>
           </p>
+          <Link href="/founder" className="mt-10 inline-flex items-center gap-4 rounded-sm border border-white/20 bg-white/5 px-5 py-4 text-left hover:bg-white/10">
+            <img src="/images/people/mars-founder.png" alt="Mars Argeadai, founder" className="h-14 w-14 rounded-full object-cover" />
+            <span className="flex flex-col">
+              <span className="text-xs font-mono uppercase tracking-[0.18em] text-white/60">From the founder</span>
+              <span className="mt-1 text-sm font-semibold text-white">Read the letter from Mars Argeadai &rarr;</span>
+            </span>
+          </Link>
           <p className="mt-8 text-xs text-stone-500">
             {/* [COUNSEL] — issuing entity and legal disclaimer */}
             The issuing entity is Build Civilization Trading Company, Inc. (Delaware

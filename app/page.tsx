@@ -122,7 +122,7 @@ export default function Home() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2">
             <div className="rounded-sm border border-white/10 bg-white/5 overflow-hidden">
               <div className="aspect-[16/10] overflow-hidden">
-                <img src="/images/selected/05-hero-requiem.png" alt="Mine entrance — future compute core" className="h-full w-full object-cover" />
+                <img src="/images/festivals/keepers/maker-pavilion-pro.jpeg" alt="Inside a Forerunner maker pavilion built into the mountain — inventors at stations across multiple terraces, cyan light seams running across the vaulted stone ceiling" className="h-full w-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white">The mines become a compute core.</h3>
@@ -131,7 +131,7 @@ export default function Home() {
             </div>
             <div className="rounded-sm border border-white/10 bg-white/5 overflow-hidden">
               <div className="aspect-[16/10] overflow-hidden">
-                <img src="/images/selected/06-silica-forge.png" alt="Silica face — future fabrication" className="h-full w-full object-cover" />
+                <img src="/images/property/photo-075.jpg" alt="Top-down aerial of the silica deposit — 98.52% SiO₂, raw material for glass, solar, and advanced fabrication" className="h-full w-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white">The silica becomes glass, solar, fabrication, and advanced materials.</h3>
@@ -140,7 +140,7 @@ export default function Home() {
             </div>
             <div className="rounded-sm border border-white/10 bg-white/5 overflow-hidden">
               <div className="aspect-[16/10] overflow-hidden">
-                <img src="/images/selected/07-hero-flash-sentinel.jpeg" alt="Plateau — future testbed" className="h-full w-full object-cover" />
+                <img src="/images/property/photo-044.jpg" alt="Cleared plateau with pond and distant mountains — the city-scale testbed, today" className="h-full w-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-white">The plateau becomes a city-scale testbed.</h3>
@@ -176,8 +176,9 @@ export default function Home() {
           </p>
 
           <div className="mt-12 aspect-[21/9] min-h-[300px] overflow-hidden rounded-sm">
-            <img src="/images/selected/03-hero-central-spire.png" alt="The living city at full scale" className="h-full w-full object-cover" />
+            <img src="/images/festivals/keepers/terrace-party-motion-pro.jpeg" alt="Festival evening on a Forerunner terrace — couple embracing laughing, friend leaping off a bench mid-cheer, glowing wine being poured, hovercraft gliding past, score tickers and quest banners overhead" className="h-full w-full object-cover" />
           </div>
+          <p className="mt-2 text-xs italic text-stone-500">Phase 4 &middot; Full-scale vision (20+ year horizon). Celebration is the engine. The land is real.</p>
 
           <div className="mt-12 max-w-3xl space-y-5 text-base leading-relaxed text-stone-300">
             <p>
@@ -378,7 +379,7 @@ export default function Home() {
           SECTION 9 — THE CLOSE
           ═══════════════════════════════════════════════════════════ */}
       <section className="relative overflow-hidden px-6 py-28 sm:py-36">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/selected/02-beacon-flash.jpeg')" }} />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/images/festivals/keepers/night-market-pro.jpeg')" }} />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0B0F14]/80 via-[#0B0F14]/70 to-[#0B0F14]/90" />
         <div className="relative z-10 mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
@@ -394,8 +395,14 @@ export default function Home() {
             <Link href="/investors" className="inline-flex items-center justify-center rounded-sm bg-white px-7 py-3.5 text-sm font-semibold text-stone-900 hover:bg-stone-100">For Investors</Link>
             <Link href="/operators" className="inline-flex items-center justify-center rounded-sm border border-white/40 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10">Run a Zone</Link>
             <Link href="/cohort" className="inline-flex items-center justify-center rounded-sm border border-white/40 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10">Join the First Fifty</Link>
-            <Link href="/founder" className="inline-flex items-center justify-center rounded-sm border border-white/40 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10">Speak with the Founder</Link>
           </div>
+          <Link href="/founder" className="mt-10 inline-flex items-center gap-4 rounded-sm border border-white/20 bg-white/5 px-5 py-4 text-left hover:bg-white/10">
+            <img src="/images/people/mars-founder.png" alt="Mars Argeadai, founder" className="h-14 w-14 rounded-full object-cover" />
+            <span className="flex flex-col">
+              <span className="text-xs font-mono uppercase tracking-[0.18em] text-white/60">From the founder</span>
+              <span className="mt-1 text-sm font-semibold text-white">Speak with Mars Argeadai &rarr;</span>
+            </span>
+          </Link>
         </div>
       </section>
     </>

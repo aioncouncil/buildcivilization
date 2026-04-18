@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
-import { ImageSlot } from "@/components/ui/ImageSlot";
 
 export const metadata: Metadata = {
   title: "Verify Investor Status | The Living City",

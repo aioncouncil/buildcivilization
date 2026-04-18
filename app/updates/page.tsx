@@ -29,7 +29,7 @@ export default function UpdatesPage() {
       {/* Timeline hero */}
       <div className="mx-auto max-w-5xl px-6">
         <div className="aspect-[5/1] min-h-[80px] overflow-hidden rounded-sm">
-          <img src="/images/generated/updates-timeline.png" alt="Build timeline — Entity Formed → LOI Signed → Due Diligence → Phase 1" className="h-full w-full object-cover" />
+          <img src="/images/property/photo-165.jpg" alt="Blue-hour summit aerial of the Cumberland Plateau — the land we are building on" className="h-full w-full object-cover" />
         </div>
       </div>
 

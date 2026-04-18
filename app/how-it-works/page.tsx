@@ -175,7 +175,7 @@ export default function HowItWorksPage() {
           </div>
           <div className="mt-10">
             <div className="aspect-[1/1] max-w-md mx-auto overflow-hidden rounded-sm">
-              <img src="/images/generated/how-it-works-domains.jpeg" alt="Twelve-domain constellation showing each domain labeled with interconnections" className="h-full w-full object-cover" />
+              <img src="/images/festivals/keepers/parade-bridge-pro.jpeg" alt="Festival parade crossing a Forerunner bridge at golden hour — musicians, dancers, floating performance platform, banners and location markers overhead — twelve domains of life in visible motion" className="h-full w-full object-cover" />
             </div>
           </div>
           <p className="mt-8 text-sm leading-relaxed text-stone-600">
@@ -220,7 +220,7 @@ export default function HowItWorksPage() {
           </p>
           <div className="mt-10">
             <div className="aspect-[16/9] overflow-hidden rounded-sm">
-              <img src="/images/generated/how-it-works-loop.jpeg" alt="The coordination loop: wants to shared list to dependency map to missions to contests to new capability" className="h-full w-full object-cover" />
+              <img src="/images/festivals/keepers/scholars-debate-v2-pro.jpeg" alt="Scholars mid-debate around a glowing holographic equation, contest leaderboard floating above, drones delivering scrolls — the coordination loop caught mid-motion" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>
@@ -309,7 +309,7 @@ export default function HowItWorksPage() {
           </p>
           <div className="mt-8">
             <div className="aspect-[16/9] overflow-hidden rounded-sm">
-              <img src="/images/generated/how-it-works-phase1.jpeg" alt="Small team working together on the land in early Phase 1" className="h-full w-full object-cover" />
+              <img src="/images/land/elk-valley-5.jpg" alt="Vehicles gathered on a ridge with mountain panorama — Phase 1 work starting on the actual land" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>
@@ -359,7 +359,7 @@ export default function HowItWorksPage() {
           </div>
           <div className="mt-10">
             <div className="aspect-[21/9] min-h-[200px] overflow-hidden rounded-sm">
-              <img src="/images/generated/how-it-works-fullscale.jpeg" alt="Domain constellation with 12 luminous nodes across the landscape showing the city at full temperature" className="h-full w-full object-cover" />
+              <img src="/images/festivals/keepers/aerial-wondrous-city-pro.jpeg" alt="Full-scale vision — a Forerunner civilization woven through the real Cumberland Plateau ridges, bridges spanning forested valleys (Phase 4, 20+ year horizon)" className="h-full w-full object-cover" />
             </div>
           </div>
           <p className="mt-10 text-lg font-medium leading-relaxed text-stone-900">
@@ -401,7 +401,7 @@ export default function HowItWorksPage() {
           </div>
           <div className="mt-8">
             <div className="aspect-[16/9] overflow-hidden rounded-sm">
-              <img src="/images/generated/how-it-works-ai.jpeg" alt="AI coordination layer as nervous system connecting 12 domains with residents at the center" className="h-full w-full object-cover" />
+              <img src="/images/festivals/keepers/cave-assembly-pro.jpeg" alt="A congregation gathered around a reflecting pool inside a Forerunner assembly chamber carved into the mountain — the coordination layer as a living congregation" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>

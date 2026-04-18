@@ -37,7 +37,7 @@ export default function OperatorsPage() {
           </p>
           <div className="mt-10">
             <div className="aspect-[16/9] overflow-hidden rounded-sm">
-              <img src="/images/generated/operators-hero.jpeg" alt="Operator at work in a forge with real materials and frontier energy" className="h-full w-full object-cover" />
+              <img src="/images/property/photo-088.jpg" alt="Aerial of a cleared ridge strip on the Cumberland Plateau, ready for zone construction" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>
@@ -64,13 +64,58 @@ export default function OperatorsPage() {
         </div>
       </Section>
 
-      {/* What an Operator Buys */}
+      {/* Two Lives, One City */}
       <Section className="bg-white">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">Two lives, one city.</h2>
+          <p className="mt-4 text-base leading-relaxed text-stone-600">
+            This is the smartest move you will make this decade. Here is why.
+          </p>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+            <div className="rounded-sm border-l-2 border-amber-600 bg-stone-50 p-6">
+              <p className="text-xs font-mono uppercase tracking-[0.18em] text-amber-700">Your life inside</p>
+              <p className="mt-3 text-lg font-bold text-stone-900">You live in a congregation.</p>
+              <p className="mt-3 text-sm leading-relaxed text-stone-600">
+                The Foundation is a religious and educational nonprofit. You join as a member
+                of a congregation, not as a wage employee. Housing, meals, training, tools,
+                healthcare, ritual, festivals &mdash; the whole architecture of your daily life
+                is covered by the city. You build, you study, you celebrate.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-stone-600">
+                Inside, we play a game: an internal currency, zones ranked in four tiers,
+                contests, seasons, and festivals. Manhattan Project meets Burning Man &mdash;
+                the highest-stakes real-world game ever built.
+              </p>
+            </div>
+            <div className="rounded-sm border-l-2 border-stone-900 bg-stone-50 p-6">
+              <p className="text-xs font-mono uppercase tracking-[0.18em] text-stone-600">Your life outside</p>
+              <p className="mt-3 text-lg font-bold text-stone-900">You own a piece of the company.</p>
+              <p className="mt-3 text-sm leading-relaxed text-stone-600">
+                Separately, the Foundation owns a for-profit Trading Company with 100,000,000
+                shares. Every month you build, you earn real shares based on your zone&rsquo;s
+                rank and your tenure. Your founding investment is just the first block.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-stone-600">
+                Those shares are real equity in the company that owns the city&rsquo;s commercial
+                layer. Priced at $100M today. Target: $5B+ at maturity. Your life outside the
+                city compounds with the city you are building inside it.
+              </p>
+            </div>
+          </div>
+          <p className="mt-8 text-base font-medium text-stone-900">
+            You live in the most beautiful thing being built. You own the company building it.
+            You get better at being human while your capital compounds. That is the deal.
+          </p>
+        </div>
+      </Section>
+
+      {/* What an Operator Buys */}
+      <Section className="bg-stone-50">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">What an operator buys.</h2>
           {/* [COUNSEL] This section describes a securities offering. Every claim must be reviewed for compliance with Reg D 506(c) or applicable exemption. "Shareholder" language must match the PPM. */}
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
-            <div className="rounded-sm border border-stone-200 bg-stone-50 p-6">
+            <div className="rounded-sm border border-stone-200 bg-white p-6">
               <p className="text-lg font-bold text-stone-900">1. Equity in Build Civilization Trading Company</p>
               <p className="mt-3 text-sm leading-relaxed text-stone-600">
                 You become a shareholder in the entity that operates the city&rsquo;s
@@ -78,7 +123,7 @@ export default function OperatorsPage() {
                 company &mdash; not just a zone, but the entire machine.
               </p>
             </div>
-            <div className="rounded-sm border border-stone-200 bg-stone-50 p-6">
+            <div className="rounded-sm border border-stone-200 bg-white p-6">
               <p className="text-lg font-bold text-stone-900">2. A founding operating role</p>
               <p className="mt-3 text-sm leading-relaxed text-stone-600">
                 You are not a passive investor. You are the person who builds and runs
@@ -97,33 +142,41 @@ export default function OperatorsPage() {
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">Founding windows.</h2>
           <p className="mt-4 text-sm text-stone-500">
             {/* [COUNSEL] Share counts, pricing, and tier structure must match the PPM exactly. Confirm all numbers with counsel before publishing. */}
-            Earlier operators take more risk and receive more ownership. Each window closes as capacity fills.
+            Phase 1 reference price is <strong>$1.00 / share</strong> on a $100M pre-money
+            valuation. Operators earn a founder discount against that reference because you are
+            not just writing a check &mdash; you are building a domain the city cannot run without.
+            Each window tightens as capacity fills. The first five take the most risk and own the
+            most.
           </p>
           <div className="mt-8 overflow-hidden rounded-sm border border-stone-200 bg-white">
             <table className="w-full text-left text-sm">
               <thead className="bg-stone-100 text-stone-900">
                 <tr>
                   <th className="px-4 py-3 font-semibold">Window</th>
+                  <th className="px-4 py-3 font-semibold">Seats</th>
                   <th className="px-4 py-3 font-semibold text-right">Investment</th>
                   <th className="px-4 py-3 font-semibold text-right">Shares</th>
-                  <th className="px-4 py-3 font-semibold text-right">Price/share</th>
+                  <th className="px-4 py-3 font-semibold text-right">Effective price</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-stone-200 text-stone-600">
                 <tr>
                   <td className="px-4 py-3 font-medium text-stone-900">Pathfinder</td>
+                  <td className="px-4 py-3">1st &ndash; 5th</td>
                   <td className="px-4 py-3 text-right">$250K</td>
                   <td className="px-4 py-3 text-right">500,000</td>
                   <td className="px-4 py-3 text-right">$0.50</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 font-medium text-stone-900">Warden</td>
+                  <td className="px-4 py-3">6th &ndash; 15th</td>
                   <td className="px-4 py-3 text-right">$500K</td>
                   <td className="px-4 py-3 text-right">300,000</td>
                   <td className="px-4 py-3 text-right">$1.67</td>
                 </tr>
                 <tr>
                   <td className="px-4 py-3 font-medium text-stone-900">Architect</td>
+                  <td className="px-4 py-3">16th &ndash; 30th</td>
                   <td className="px-4 py-3 text-right">$1M</td>
                   <td className="px-4 py-3 text-right">200,000</td>
                   <td className="px-4 py-3 text-right">$5.00</td>
@@ -132,13 +185,20 @@ export default function OperatorsPage() {
             </table>
           </div>
           <div className="mt-6 rounded-sm border border-stone-200 bg-white p-6">
-            <p className="text-sm font-bold text-stone-900">Target scenario</p>
+            <p className="text-sm font-bold text-stone-900">Target scenario &mdash; the payoff curve.</p>
             {/* [COUNSEL] Forward-looking valuation scenario. Must include prominent risk disclaimers. Confirm safe-harbor language with counsel. */}
             <p className="mt-2 text-sm leading-relaxed text-stone-600">
-              At a $5B enterprise value, a Pathfinder&rsquo;s 500,000 shares would be
-              worth approximately <strong>$25M</strong>. A Warden&rsquo;s 300,000 shares
-              would be worth approximately <strong>$15M</strong>. An Architect&rsquo;s
-              200,000 shares would be worth approximately <strong>$10M</strong>.
+              The company is priced at $100M today. The target is $5B+ at maturity &mdash;
+              $50 / share. Your founding shares ride that curve.
+            </p>
+            <ul className="mt-4 space-y-2 text-sm leading-relaxed text-stone-700">
+              <li><strong>Pathfinder</strong> &mdash; 500,000 shares at maturity &asymp; <strong>$25M</strong> on a $250K check (100&times;)</li>
+              <li><strong>Warden</strong> &mdash; 300,000 shares at maturity &asymp; <strong>$15M</strong> on a $500K check (30&times;)</li>
+              <li><strong>Architect</strong> &mdash; 200,000 shares at maturity &asymp; <strong>$10M</strong> on a $1M check (10&times;)</li>
+            </ul>
+            <p className="mt-4 text-sm leading-relaxed text-stone-600">
+              And this is just your founding block. Every month you build, you earn more shares
+              based on your zone&rsquo;s rank and your tenure. Operators who stay compound.
             </p>
             <p className="mt-3 text-xs leading-relaxed text-stone-500">
               These are illustrative scenarios, not projections or guarantees. Actual
@@ -151,8 +211,36 @@ export default function OperatorsPage() {
         </div>
       </Section>
 
-      {/* What Operators Unlock */}
+      {/* The festival engine — how the city runs on celebration */}
       <Section className="bg-white">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">The engine is celebration.</h2>
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-stone-600">
+            Hundreds of festivals run across the city every day. Contests, invention reveals,
+            expeditions, feasts, performances, mission launches. Zones pair up in festival teams
+            to work through the backlog of what the city needs next. Score tickers and quest
+            pointers float over the plazas like a living open-world game. Your zone is an
+            anchor inside that game.
+          </p>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <img src="/images/festivals/keepers/athletics-motion-pro.jpeg" alt="Athletic contest on a sunlit Forerunner arena with leaderboard hologram, runners mid-sprint, a gymnast mid-air, hovercraft passing above" className="h-full w-full object-cover" />
+            </div>
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <img src="/images/festivals/keepers/invention-demo-v3-pro.jpeg" alt="A scholar demonstrating a glowing holographic sphere to a crowd — a boy on a parent's shoulders reaching, a student's hand stretched toward the hologram, EXHIBIT quest-pointer HUD overhead, cyan bunting and lanterns" className="h-full w-full object-cover" />
+            </div>
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <img src="/images/festivals/keepers/forge-work-pro.jpeg" alt="A Forerunner forge carved into the mountain — smith mid-strike, sparks flying, glowing cyan metal on the anvil, apprentice with tongs, holographic schematic beside the workbench" className="h-full w-full object-cover" />
+            </div>
+            <div className="aspect-[4/3] overflow-hidden rounded-sm">
+              <img src="/images/festivals/keepers/harbor-dive-pro.jpeg" alt="Traveler leaping from stone pier onto a departing hovercraft, destination quest-marker floating overhead, crew and friends watching" className="h-full w-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* What Operators Unlock */}
+      <Section className="bg-stone-50">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">What operators unlock.</h2>
           <p className="mt-6 text-base leading-relaxed text-stone-600">
@@ -177,11 +265,15 @@ export default function OperatorsPage() {
             The question is not &ldquo;will my business have customers?&rdquo; The
             question is &ldquo;what does the city become once my domain exists?&rdquo;
           </p>
+          <div className="mt-10 aspect-[21/9] overflow-hidden rounded-sm">
+            <img src="/images/festivals/keepers/night-market-pro.jpeg" alt="Night market at a Forerunner plaza — vendor handing a glowing crystal to a customer, contest leaderboard and location marker HUD, hovercraft landing, lantern-lit crowd" className="h-full w-full object-cover" />
+          </div>
+          <p className="mt-3 text-xs italic text-stone-500">Phase 4 &middot; What a domain becomes when a zone anchors it.</p>
         </div>
       </Section>
 
       {/* What a Zone Can Be */}
-      <Section className="bg-stone-50">
+      <Section className="bg-white">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold tracking-tight text-stone-900 sm:text-3xl">What a zone can be.</h2>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2 text-base text-stone-600">
@@ -278,8 +370,9 @@ export default function OperatorsPage() {
           </p>
           <div className="mt-8">
             <div className="aspect-[16/9] overflow-hidden rounded-sm">
-              <img src="/images/generated/operators-phase1.jpeg" alt="Phase 1 construction site with first shells going up and people working" className="h-full w-full object-cover" />
+              <img src="/images/property/photo-155.jpg" alt="Freshly graded pad in the forest — day one of a Phase 1 zone build site on the Cumberland Plateau" className="h-full w-full object-cover" />
             </div>
+            <p className="mt-2 text-xs italic text-stone-500">Phase 1 &middot; The actual land, today.</p>
           </div>
         </div>
       </Section>
@@ -287,7 +380,8 @@ export default function OperatorsPage() {
       {/* Full City at Scale */}
       <Section className="bg-stone-900 text-white">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">The full city at scale.</h2>
+          <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-amber-300">Phase 4 &middot; Full-scale vision (20+ year horizon)</p>
+          <h2 className="mt-3 text-2xl font-bold tracking-tight text-white sm:text-3xl">The full city at scale.</h2>
           <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-300">
             <p>
               At full scale, operators are not just running profitable enterprises. They
@@ -308,8 +402,9 @@ export default function OperatorsPage() {
           </p>
           <div className="mt-8">
             <div className="aspect-[16/9] overflow-hidden rounded-sm">
-              <img src="/images/generated/operators-fullcity.jpeg" alt="Full city at scale with Forerunner architecture and festivals alive with activity" className="h-full w-full object-cover" />
+              <img src="/images/festivals/keepers/hero-market-dusk-pro.jpeg" alt="Festival evening in the city — caught moment of a woman mid-laugh with a glowing vase, kids running past, a hovercraft landing, musicians on a floating platform, banners and lanterns overhead" className="h-full w-full object-cover" />
             </div>
+            <p className="mt-2 text-xs italic text-stone-400">Phase 4 &middot; Full-scale vision. One of hundreds of festivals that run each day.</p>
           </div>
         </div>
       </Section>

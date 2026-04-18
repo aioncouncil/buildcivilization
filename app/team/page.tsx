@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Section } from "@/components/ui/Section";
-import { ImageSlot } from "@/components/ui/ImageSlot";
 
 export const metadata: Metadata = {
   title: "Team | The Living City",
@@ -57,7 +56,9 @@ export default function TeamPage() {
           >
             mars@buildcivilization.com
           </a>
-          <div className="mt-6"><ImageSlot language="pioneering" description="Mars environmental portrait — on the land, natural light" shot="Shot #20 — Founder portrait" aspect="1/1" className="max-w-[200px]" /></div>
+          <div className="mt-6 max-w-[200px] aspect-square overflow-hidden rounded-sm">
+            <img src="/images/people/mars-founder.png" alt="Mars Argeadai, founder" className="h-full w-full object-cover" />
+          </div>
         </div>
       </Section>
 
@@ -89,7 +90,6 @@ export default function TeamPage() {
           >
             Heath@haydenoutdoors.com
           </a>
-          <div className="mt-6"><ImageSlot language="pioneering" description="Heath Thompson — on the land or with aerial equipment, natural light" shot="Shot #51 — Heath portrait" aspect="1/1" className="max-w-[200px]" /></div>
         </div>
       </Section>
 
